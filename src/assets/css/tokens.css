@@ -1,1 +1,111 @@
-/* Design tokens placeholder */
+:root {
+  /* Colors */
+  --color-warm-white: #FAF9F7;
+  --color-charcoal: #222222;
+  --color-slate-gray: #555E68;
+  --color-blueprint-blue: #355E8C;
+  --color-light-stone: #E7E4DF;
+  --color-mist-gray: #F4F5F4;
+  --color-concrete: #D7D3CE;
+  --color-dark-slate: #37404A;
+
+  --color-background: var(--color-warm-white);
+  --color-surface: #FFFFFF;
+  --color-surface-muted: var(--color-mist-gray);
+  --color-text: var(--color-charcoal);
+  --color-text-muted: var(--color-slate-gray);
+  --color-heading: var(--color-charcoal);
+  --color-border: var(--color-concrete);
+  --color-border-subtle: var(--color-light-stone);
+  --color-accent: var(--color-blueprint-blue);
+  --color-accent-dark: #284A72;
+  --color-focus: var(--color-blueprint-blue);
+
+  /* Typography */
+  --font-logo: "IBM Plex Sans", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  --font-size-caption: clamp(0.8125rem, 0.78rem + 0.16vw, 0.875rem);
+  --font-size-body: clamp(1rem, 0.96rem + 0.19vw, 1.0625rem);
+  --font-size-lead: clamp(1.125rem, 1.04rem + 0.38vw, 1.25rem);
+  --font-size-nav: 0.9375rem;
+  --font-size-button: 0.9375rem;
+  --font-size-logo: 1.125rem;
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.375rem;
+  --font-size-h3: 1.875rem;
+  --font-size-h4: 1.5rem;
+  --font-size-h5: 1.25rem;
+  --font-size-h6: 1.0625rem;
+
+  --line-height-tight: 1.08;
+  --line-height-heading: 1.16;
+  --line-height-body: 1.7;
+  --line-height-lead: 1.62;
+  --line-height-caption: 1.5;
+
+  --letter-spacing-nav: 0;
+  --letter-spacing-button: 0;
+
+  /* Spacing */
+  --space-2xs: clamp(0.25rem, 0.23rem + 0.1vw, 0.3125rem);
+  --space-xs: clamp(0.5rem, 0.46rem + 0.19vw, 0.625rem);
+  --space-sm: clamp(0.75rem, 0.69rem + 0.29vw, 0.9375rem);
+  --space-md: clamp(1rem, 0.92rem + 0.38vw, 1.25rem);
+  --space-lg: clamp(1.5rem, 1.35rem + 0.77vw, 2rem);
+  --space-xl: clamp(2rem, 1.77rem + 1.15vw, 2.75rem);
+  --space-2xl: clamp(3rem, 2.54rem + 2.31vw, 4.5rem);
+  --space-3xl: clamp(4rem, 3.23rem + 3.85vw, 6.5rem);
+
+  /* Radii */
+  --radius-none: 0;
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-pill: 999px;
+
+  /* Borders */
+  --border-width: 1px;
+  --border-width-strong: 2px;
+  --border-subtle: var(--border-width) solid var(--color-border-subtle);
+  --border-standard: var(--border-width) solid var(--color-border);
+  --border-strong: var(--border-width-strong) solid var(--color-charcoal);
+
+  /* Layout */
+  --container-max: 72rem;
+  --container-narrow: 48rem;
+  --container-wide: 86rem;
+  --container-padding: clamp(1rem, 0.69rem + 1.54vw, 2rem);
+  --section-padding: clamp(4rem, 3.23rem + 3.85vw, 6.5rem);
+  --grid-gap: clamp(1.25rem, 0.94rem + 1.54vw, 2.25rem);
+  --card-padding: clamp(1.25rem, 1.02rem + 1.15vw, 2rem);
+
+  /* Breakpoints */
+  --breakpoint-xs: 30rem;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --font-size-h1: 4rem;
+    --font-size-h2: 3rem;
+    --font-size-h3: 2.25rem;
+    --font-size-h4: 1.75rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --font-size-h1: 5rem;
+    --font-size-h2: 3.5rem;
+    --font-size-h3: 2.5rem;
+  }
+}

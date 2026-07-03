@@ -10,6 +10,10 @@ html {
   text-size-adjust: 100%;
 }
 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100%;
   margin: 0;
@@ -21,6 +25,16 @@ body {
   line-height: var(--line-height-body);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+body,
+.site-shell {
+  min-height: 100vh;
+}
+
+.site-shell {
+  display: flex;
+  flex-direction: column;
 }
 
 ::selection {
@@ -174,6 +188,11 @@ textarea {
 
 button {
   cursor: pointer;
+}
+
+.site-main {
+  flex: 1;
+  outline: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

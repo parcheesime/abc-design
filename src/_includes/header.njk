@@ -1,1 +1,32 @@
-<header><nav>ABC Design</nav></header>
+{% set navItems = [
+  { label: "Home", url: "/" },
+  { label: "Services", url: "/services/" },
+  { label: "Projects", url: "/projects/" },
+  { label: "About", url: "/about/" },
+  { label: "FAQ", url: "/faq/" },
+  { label: "Contact", url: "/contact/" }
+] %}
+
+<header class="site-header">
+  <div class="site-header__inner container">
+    <a class="site-brand" href="/" aria-label="ABC Design home">
+      <span class="logo-text">ABC Design</span>
+      <span class="site-brand__tagline">Building Design &amp; Permit Plans</span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <ul class="primary-nav__list">
+        {% for item in navItems %}
+          {% set isCurrent = page.url == item.url %}
+          <li class="primary-nav__item">
+            <a
+              class="nav-link{% if isCurrent %} is-current{% endif %}"
+              href="{{ item.url }}"
+              {% if isCurrent %}aria-current="page"{% endif %}
+            >{{ item.label }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

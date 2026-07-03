@@ -1,1 +1,21 @@
-<!doctype html><html><head><meta charset='utf-8'><title>{{ title }} | ABC Design</title><link rel='stylesheet' href='/assets/css/main.css'></head><body>{% include 'header.njk' %}<main>{{ content | safe }}</main>{% include 'footer.njk' %}</body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }} | ABC Design</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="site-shell">
+      {% include "header.njk" %}
+      <main id="main-content" class="site-main" tabindex="-1">
+        <div class="page-wrapper container">
+          {{ content | safe }}
+        </div>
+      </main>
+      {% include "footer.njk" %}
+    </div>
+  </body>
+</html>

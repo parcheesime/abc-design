@@ -2,6 +2,33 @@
 layout: layout.njk
 title: Home
 ---
+{% set services = [
+  {
+    title: "Residential Design",
+    description: "Custom homes, additions, remodels, renovations, and ADUs designed for beauty, function, and code compliance.",
+    url: "/services/#residential",
+    icon: "home"
+  },
+  {
+    title: "Commercial Design",
+    description: "Tenant improvements, restaurants, retail, offices, medical facilities, and more.",
+    url: "/services/#commercial",
+    icon: "building"
+  },
+  {
+    title: "ADUs",
+    description: "Detached ADUs, garage conversions, JADUs, permit-ready plans, and city coordination.",
+    url: "/services/#adus",
+    icon: "adu"
+  },
+  {
+    title: "Plans & Permits",
+    description: "Construction drawings, permit packages, consultant coordination, city review, and plan check support.",
+    url: "/services/#permits",
+    icon: "plans"
+  }
+] %}
+
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero__content">
     <h1 id="hero-title">Building Design Made Simple</h1>
@@ -19,5 +46,53 @@ title: Home
       <span></span>
       <span></span>
     </div>
+  </div>
+</section>
+
+<section class="services-section" aria-label="Services">
+  <div class="grid grid-2 grid-4 services-grid">
+    {% for service in services %}
+      <a class="card service-card" href="{{ service.url }}">
+        <span class="service-card__icon" aria-hidden="true">
+          {% if service.icon == "home" %}
+            <svg viewBox="0 0 32 32" focusable="false">
+              <path d="M5 15.5 16 6l11 9.5" />
+              <path d="M8.5 14v12h15V14" />
+              <path d="M13 26v-8h6v8" />
+            </svg>
+          {% elif service.icon == "building" %}
+            <svg viewBox="0 0 32 32" focusable="false">
+              <path d="M8 26V7h16v19" />
+              <path d="M5 26h22" />
+              <path d="M12 11h2" />
+              <path d="M18 11h2" />
+              <path d="M12 16h2" />
+              <path d="M18 16h2" />
+              <path d="M14 26v-5h4v5" />
+            </svg>
+          {% elif service.icon == "adu" %}
+            <svg viewBox="0 0 32 32" focusable="false">
+              <path d="M4 17 12 10l8 7" />
+              <path d="M7 16v10h10V16" />
+              <path d="M19 22h8" />
+              <path d="M23 18v8" />
+            </svg>
+          {% else %}
+            <svg viewBox="0 0 32 32" focusable="false">
+              <path d="M9 5h11l3 3v19H9z" />
+              <path d="M20 5v5h5" />
+              <path d="M13 15h8" />
+              <path d="M13 20h8" />
+              <path d="M13 25h5" />
+            </svg>
+          {% endif %}
+        </span>
+        <span class="stack stack-sm service-card__body">
+          <h3 class="card-title service-card__title">{{ service.title }}</h3>
+          <span class="card-text">{{ service.description }}</span>
+        </span>
+        <span class="button-text service-card__link">Learn More &rarr;</span>
+      </a>
+    {% endfor %}
   </div>
 </section>

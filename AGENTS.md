@@ -95,3 +95,4 @@ Explain any implementation tradeoffs or limitations.
 - [ ] Accessibility has been preserved where possible.
 - [ ] Responsive behavior has been preserved where possible.
 - [ ] No unnecessary dependencies were introduced.
+- [ ] Do not run npm install, npm update, npm audit fix, or add dependencies unless explicitly requested.

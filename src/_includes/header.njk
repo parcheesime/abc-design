@@ -14,7 +14,22 @@
       <span class="site-brand__tagline">Building Design &amp; Permit Plans</span>
     </a>
 
-    <nav class="primary-nav" aria-label="Primary navigation">
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="primary-navigation"
+      hidden
+    >
+      <span class="nav-toggle__label">Menu</span>
+      <span class="nav-toggle__icon" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+
+    <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation">
       <ul class="primary-nav__list">
         {% for item in navItems %}
           {% set isCurrent = page.url == item.url %}
@@ -30,3 +45,5 @@
     </nav>
   </div>
 </header>
+
+<script src="/assets/js/navigation.js" defer></script>

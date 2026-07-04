@@ -30,13 +30,15 @@ title: Home
 ] %}
 
 <section class="hero" aria-labelledby="hero-title">
-  <div class="hero__content">
-    <h1 id="hero-title">Building Design Made Simple</h1>
-    <p class="hero__subtext">
-      Residential and commercial building design, permit plans, and construction drawings throughout San Diego County.
-    </p>
-    <div class="hero__actions" aria-label="Homepage calls to action">
-      <a class="button-primary" href="/projects/">View Projects &rarr;</a>
+  <div class="hero__inner container">
+    <div class="hero__content">
+      <h1 id="hero-title">Building Design Made Simple</h1>
+      <p class="hero__subtext">
+        Residential and commercial building design, permit plans, and construction drawings throughout San Diego County.
+      </p>
+      <div class="hero__actions" aria-label="Homepage calls to action">
+        <a class="button-primary" href="/projects/">View Projects &rarr;</a>
+      </div>
     </div>
   </div>
 
@@ -50,55 +52,57 @@ title: Home
 </section>
 
 <section class="services-section" aria-label="Services">
-  <div class="grid grid-2 grid-4 services-grid">
-    {% for service in services %}
-      <a class="card service-card" href="{{ service.url }}">
-        <span class="service-card__icon" aria-hidden="true">
-          {% if service.icon == "home" %}
-            <svg viewBox="0 0 32 32" focusable="false">
-              <path d="M5 15.5 16 6l11 9.5" />
-              <path d="M8.5 14v12h15V14" />
-              <path d="M13 26v-8h6v8" />
-            </svg>
-          {% elif service.icon == "building" %}
-            <svg viewBox="0 0 32 32" focusable="false">
-              <path d="M8 26V7h16v19" />
-              <path d="M5 26h22" />
-              <path d="M12 11h2" />
-              <path d="M18 11h2" />
-              <path d="M12 16h2" />
-              <path d="M18 16h2" />
-              <path d="M14 26v-5h4v5" />
-            </svg>
-          {% elif service.icon == "adu" %}
-            <svg viewBox="0 0 32 32" focusable="false">
-              <path d="M4 17 12 10l8 7" />
-              <path d="M7 16v10h10V16" />
-              <path d="M19 22h8" />
-              <path d="M23 18v8" />
-            </svg>
-          {% else %}
-            <svg viewBox="0 0 32 32" focusable="false">
-              <path d="M9 5h11l3 3v19H9z" />
-              <path d="M20 5v5h5" />
-              <path d="M13 15h8" />
-              <path d="M13 20h8" />
-              <path d="M13 25h5" />
-            </svg>
-          {% endif %}
-        </span>
-        <span class="stack stack-sm service-card__body">
-          <h3 class="card-title service-card__title">{{ service.title }}</h3>
-          <span class="card-text">{{ service.description }}</span>
-        </span>
-        <span class="button-text service-card__link">Learn More &rarr;</span>
-      </a>
-    {% endfor %}
+  <div class="container">
+    <div class="grid grid-2 grid-4 services-grid">
+      {% for service in services %}
+        <a class="card service-card" href="{{ service.url }}">
+          <span class="service-card__icon" aria-hidden="true">
+            {% if service.icon == "home" %}
+              <svg viewBox="0 0 32 32" focusable="false">
+                <path d="M5 15.5 16 6l11 9.5" />
+                <path d="M8.5 14v12h15V14" />
+                <path d="M13 26v-8h6v8" />
+              </svg>
+            {% elif service.icon == "building" %}
+              <svg viewBox="0 0 32 32" focusable="false">
+                <path d="M8 26V7h16v19" />
+                <path d="M5 26h22" />
+                <path d="M12 11h2" />
+                <path d="M18 11h2" />
+                <path d="M12 16h2" />
+                <path d="M18 16h2" />
+                <path d="M14 26v-5h4v5" />
+              </svg>
+            {% elif service.icon == "adu" %}
+              <svg viewBox="0 0 32 32" focusable="false">
+                <path d="M4 17 12 10l8 7" />
+                <path d="M7 16v10h10V16" />
+                <path d="M19 22h8" />
+                <path d="M23 18v8" />
+              </svg>
+            {% else %}
+              <svg viewBox="0 0 32 32" focusable="false">
+                <path d="M9 5h11l3 3v19H9z" />
+                <path d="M20 5v5h5" />
+                <path d="M13 15h8" />
+                <path d="M13 20h8" />
+                <path d="M13 25h5" />
+              </svg>
+            {% endif %}
+          </span>
+          <span class="stack stack-sm service-card__body">
+            <h3 class="card-title service-card__title">{{ service.title }}</h3>
+            <span class="card-text">{{ service.description }}</span>
+          </span>
+          <span class="button-text service-card__link">Learn More &rarr;</span>
+        </a>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
 <section class="experience-section" aria-labelledby="experience-title">
-  <div class="experience-section__inner">
+  <div class="experience-section__inner container">
     <h2 id="experience-title" class="experience-section__title">
       <span class="experience-section__words">
         <span>Experience</span>

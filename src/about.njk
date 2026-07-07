@@ -2,14 +2,13 @@
 layout: layout.njk
 title: About
 ---
-<section class="page-hero about-hero" aria-labelledby="about-title">
-  <div class="container page-hero__inner about-hero__inner">
-    <h1 id="about-title">Practical building design for San Diego projects</h1>
-    <p class="lead">
-      ABC Design helps homeowners, business owners, and project teams move from early ideas to clear, permit-focused plans.
-    </p>
-  </div>
-</section>
+{% set pageHero = {
+  id: "about-title",
+  title: "Professional building design for San Diego projects",
+  text: "ABC Design helps homeowners, business owners, and project teams move from early ideas to clear, permit-focused plans.",
+  className: "about-hero"
+} %}
+{% include "page-hero.njk" %}
 
 <div class="container about-hero-media" aria-hidden="true">
   <div class="about-image-placeholder"></div>

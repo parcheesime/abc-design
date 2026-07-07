@@ -3,10 +3,9 @@ layout: layout.njk
 title: Projects
 permalink: /projects/
 ---
-
-<section class="section">
-  <div class="container">
-    <h1>Projects</h1>
-    <p class="lead">Project examples will be added here.</p>
-  </div>
-</section>
+{% set pageHero = {
+  id: "projects-title",
+  title: "Projects",
+  text: "Project examples will be added here."
+} %}
+{% include "page-hero.njk" %}

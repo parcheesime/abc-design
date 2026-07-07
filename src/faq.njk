@@ -2,14 +2,12 @@
 layout: layout.njk
 title: FAQ
 ---
-<section class="page-hero" aria-labelledby="faq-title">
-  <div class="container page-hero__inner">
-    <h1 id="faq-title">Common project questions.</h1>
-    <p class="lead">
-      Straight answers about building design, permits, coordination, and what to expect before a project begins.
-    </p>
-  </div>
-</section>
+{% set pageHero = {
+  id: "faq-title",
+  title: "Common project questions.",
+  text: "Straight answers about building design, permits, coordination, and what to expect before a project begins."
+} %}
+{% include "page-hero.njk" %}
 
 <section class="section faq-section" aria-label="Frequently asked questions">
   <div class="container faq-list">

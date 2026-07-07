@@ -1,0 +1,10 @@
+<section class="page-hero{% if pageHero.className %} {{ pageHero.className }}{% endif %}" aria-labelledby="{{ pageHero.id }}">
+  <div class="container page-hero__inner">
+    <h1 id="{{ pageHero.id }}">{{ pageHero.title }}</h1>
+    {% if pageHero.text %}
+      <p class="lead">
+        {{ pageHero.text }}
+      </p>
+    {% endif %}
+  </div>
+</section>

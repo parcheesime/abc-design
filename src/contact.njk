@@ -2,14 +2,12 @@
 layout: layout.njk
 title: Contact
 ---
-<section class="page-hero" aria-labelledby="contact-title">
-  <div class="container page-hero__inner">
-    <h1 id="contact-title">Tell Rick about your project.</h1>
-    <p class="lead">
-      Share the site, scope, and timing you have in mind. A few clear details are enough to begin the conversation.
-    </p>
-  </div>
-</section>
+{% set pageHero = {
+  id: "contact-title",
+  title: "Tell Rick about your project.",
+  text: "Share the site, scope, and timing you have in mind. A few clear details are enough to begin the conversation."
+} %}
+{% include "page-hero.njk" %}
 
 <section class="section contact-section" aria-label="Contact details and form">
   <div class="container contact-layout">

@@ -1,0 +1,59 @@
+{
+  "id": "parke-ivy",
+
+  "title": "Parke Ivy",
+
+  "featured": true,
+
+  "yearCompleted": 2007,
+
+  "status": "completed",
+
+  "location": {
+    "city": "San Diego",
+    "state": "CA"
+  },
+
+  "propertyType": "condominium",
+
+  "jobType": [
+    "residential",
+    "condominiums"
+  ],
+
+  "services": [
+    "building design",
+    "construction documents",
+    "permitting",
+    "construction"
+  ],
+
+  "role": [
+    "designer",
+    "builder"
+  ],
+
+  "summary": "Design and construction of the Parke Ivy condominium community in San Diego.",
+
+  "description": "Rick provided both the building design and construction for the Parke Ivy condominium development, creating a residential community that combined thoughtful architecture with quality construction.",
+
+  "images": [
+    {
+      "src": "/assets/images/projects/parke-ivy/hero.webp",
+      "alt": "Front exterior of the Parke Ivy condominium community",
+      "featured": true
+    },
+    {
+      "src": "/assets/images/projects/parke-ivy/front-angle.webp",
+      "alt": "Street view of Parke Ivy"
+    },
+    {
+      "src": "/assets/images/projects/parke-ivy/courtyard.webp",
+      "alt": "Landscaped courtyard"
+    }
+  ],
+
+  "clientPermission": true,
+
+  "public": true
+}

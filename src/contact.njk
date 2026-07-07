@@ -2,6 +2,92 @@
 layout: layout.njk
 title: Contact
 ---
-<div class="container">
-  <h1>Contact</h1>
-</div>
+<section class="page-hero" aria-labelledby="contact-title">
+  <div class="container page-hero__inner">
+    <h1 id="contact-title">Tell Rick about your project.</h1>
+    <p class="lead">
+      Share the site, scope, and timing you have in mind. A few clear details are enough to begin the conversation.
+    </p>
+  </div>
+</section>
+
+<section class="section contact-section" aria-label="Contact details and form">
+  <div class="container contact-layout">
+    <aside class="contact-summary">
+      <div class="stack">
+        <div class="section-heading">
+          <h2>Project inquiries</h2>
+          <p>
+            ABC Design works with homeowners, business owners, and project teams throughout San Diego County.
+          </p>
+        </div>
+
+        <dl class="contact-list">
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:+16195550132">(619) 555-0132</a></dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:rick@abcdesign.example">rick@abcdesign.example</a></dd>
+          </div>
+          <div>
+            <dt>Service area</dt>
+            <dd>San Diego County</dd>
+          </div>
+        </dl>
+      </div>
+    </aside>
+
+    <div class="contact-form-panel">
+      <!-- TODO: Connect this form to the production form handler when one is available. -->
+      <form class="contact-form" action="/thank-you/" method="get">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+
+        <div class="form-field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+
+        <div class="form-field">
+          <label for="project-type">Project Type</label>
+          <select id="project-type" name="project-type">
+            <option value="">Select a project type</option>
+            <option value="residential">Residential</option>
+            <option value="commercial">Commercial</option>
+            <option value="adu">ADU</option>
+            <option value="permit-plans">Permit plans</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="project-location">Project Location</label>
+          <input id="project-location" name="project-location" type="text" autocomplete="address-level2">
+        </div>
+
+        <div class="form-field">
+          <label for="timeline">Timeline</label>
+          <input id="timeline" name="timeline" type="text">
+        </div>
+
+        <div class="form-field form-field--full">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <div class="form-actions form-field--full">
+          <button class="button-primary" type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

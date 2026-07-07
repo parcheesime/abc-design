@@ -50,6 +50,7 @@ body,
   color: var(--color-heading);
   font-family: var(--font-serif);
   line-height: var(--line-height-heading);
+  text-wrap: pretty;
 }
 
 h1 {
@@ -87,7 +88,7 @@ h6 {
   font-size: var(--font-size-h6);
 }
 
-:where(p, li, dd, figcaption, blockquote) {
+:where(p, li, dt, dd, figcaption, blockquote, label, summary, small) {
   max-width: 68ch;
   text-wrap: pretty;
 }

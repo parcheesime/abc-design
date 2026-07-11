@@ -51,12 +51,6 @@
   flex: 0 1 auto;
   gap: var(--space-2xs);
   min-width: 0;
-  color: var(--color-charcoal);
-  text-decoration: none;
-}
-
-.site-brand:hover {
-  color: var(--color-charcoal);
 }
 
 .site-brand__tagline {
@@ -180,14 +174,6 @@
 .site-footer p,
 .site-footer small {
   color: color-mix(in srgb, var(--color-warm-white), transparent 16%);
-}
-
-.site-footer__brand {
-  color: var(--color-warm-white);
-  font-family: var(--font-logo);
-  font-size: var(--font-size-logo);
-  font-weight: var(--font-weight-semibold);
-  line-height: 1.2;
 }
 
 .site-footer__tagline {
@@ -668,17 +654,65 @@
   color: var(--color-accent);
 }
 
-.logo-text {
-  background: linear-gradient(90deg, #222222 0 41%, #355E8C 41% 100%);
-  color: transparent;
-  font-family: var(--font-logo);
-  font-size: calc(var(--font-size-logo) * 1.6);
-  font-weight: var(--font-weight-semibold);
-  line-height: 1.05;
+.logo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: max-content;
+  max-width: 100%;
+  color: var(--color-blueprint);
+  line-height: 0.9;
+  text-align: left;
   text-decoration: none;
   text-transform: uppercase;
-  background-clip: text;
+}
+
+.logo:hover {
+  color: var(--color-blueprint);
+}
+
+.logo__abc {
+  color: transparent;
+  font-family: var(--font-logo);
+  font-size: clamp(2.25rem, 1.95rem + 1.38vw, 3rem);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  line-height: 0.86;
+  text-transform: uppercase;
   -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1.4px var(--color-blueprint);
+}
+
+.logo__design {
+  display: block;
+  width: 100%;
+  color: var(--color-blueprint);
+  font-size: clamp(1.05rem, 0.94rem + 0.5vw, 1.32rem);
+  font-weight: 400;
+  letter-spacing: calc(0.233em + 0.07vw);
+  line-height: 0.95;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Exploration classes: swap logo--design-neucha for patrick-hand or kalam on .logo for comparison. */
+.logo--design-neucha .logo__design {
+  font-family: var(--font-logo-hand-neucha);
+}
+
+.logo--design-patrick-hand .logo__design {
+  font-family: var(--font-logo-hand-patrick);
+  letter-spacing: 0.1em;
+}
+
+.logo--design-kalam .logo__design {
+  font-family: var(--font-logo-hand-kalam);
+  font-size: clamp(0.98rem, 0.88rem + 0.45vw, 1.22rem);
+  letter-spacing: 0.06em;
+}
+
+.site-footer__logo {
+  --color-blueprint: var(--color-blueprint-blue);
 }
 
 .nav-link {

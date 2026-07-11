@@ -1,0 +1,6 @@
+{% macro logo(className = "") %}
+  <a class="logo logo--design-neucha{% if className %} {{ className }}{% endif %}" href="/" aria-label="ABC Design home">
+    <span class="logo__abc">ABC</span>
+    <span class="logo__design">DESIGN</span>
+  </a>
+{% endmacro %}

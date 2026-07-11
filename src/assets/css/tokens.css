@@ -81,8 +81,11 @@
   --border-strong: var(--border-width-strong) solid var(--color-charcoal);
 
   /* Layout */
-  --content-width: 100rem;
-  --page-gutter: 1.25rem;
+  --content-width: 120rem;
+  --page-gutter-mobile: 1.25rem;
+  --page-gutter-tablet: 1.5rem;
+  --page-gutter-desktop: 1.875rem;
+  --page-gutter: var(--page-gutter-mobile);
   --section-padding: clamp(4rem, 3.23rem + 3.85vw, 6.5rem);
   --grid-gap: clamp(1.25rem, 0.94rem + 1.54vw, 2.25rem);
   --card-padding: clamp(1.25rem, 1.02rem + 1.15vw, 2rem);
@@ -97,7 +100,7 @@
 
 @media (min-width: 48rem) {
   :root {
-    --page-gutter: 1.5rem;
+    --page-gutter: var(--page-gutter-tablet);
 
     --font-size-h1: 4rem;
     --font-size-h2: 3rem;
@@ -108,7 +111,7 @@
 
 @media (min-width: 64rem) {
   :root {
-    --page-gutter: 1.75rem;
+    --page-gutter: var(--page-gutter-desktop);
 
     --font-size-h1: 5rem;
     --font-size-h2: 3.5rem;
@@ -118,6 +121,6 @@
 
 @media (min-width: 90rem) {
   :root {
-    --page-gutter: 2rem;
+    --page-gutter: var(--page-gutter-desktop);
   }
 }

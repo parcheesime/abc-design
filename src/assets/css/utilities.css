@@ -225,7 +225,8 @@
 }
 
 .hero__subtext {
-  color: #555E68;
+    color: #355E8C;
+  font-weight: 800;
   width: min(100%, 40rem);
   max-width: 40rem;
   font-size: var(--font-size-lead);
@@ -235,6 +236,7 @@
 
 .hero h1 {
   color: #222222;
+  font-weight: 900;
 }
 
 .hero__actions {
@@ -1032,6 +1034,10 @@
 }
 
 @media (max-width: 47.99rem) {
+  .hero__content {
+    max-width: 400px;
+  }
+
   .hero h1 {
     max-width: 15ch;
     font-size: 2.625rem;
@@ -1104,6 +1110,12 @@
   }
 }
 
+@media (min-width: 48rem) and (max-width: 56.25rem) {
+  .hero__content {
+    max-width: 570px;
+  }
+}
+
 @media (max-width: 31.25rem) {
   .hero h1 {
     max-width: 8.5ch;
@@ -1120,7 +1132,7 @@
   }
 }
 
-@media (min-width: 48rem) and (max-width: 63.99rem) {
+@media (min-width: 48rem) and (max-width: 64rem) {
   .hero__image {
     background-position: 35% center;
   }

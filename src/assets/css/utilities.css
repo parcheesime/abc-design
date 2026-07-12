@@ -864,6 +864,109 @@
   line-height: var(--line-height-body);
 }
 
+.projects-section {
+  padding-block-start: var(--space-xl);
+}
+
+.projects-grid {
+  align-items: stretch;
+}
+
+.project-card {
+  display: grid;
+  align-content: start;
+  gap: var(--space-lg);
+  padding: var(--space-md);
+}
+
+.project-card:hover {
+  border-color: var(--color-border);
+  background: var(--color-surface);
+  transform: none;
+}
+
+.project-card__image {
+  display: grid;
+  min-height: 18rem;
+  overflow: hidden;
+  place-items: center;
+  border-radius: var(--radius-sm);
+  background:
+    linear-gradient(135deg, transparent 0 48%, color-mix(in srgb, var(--color-concrete), transparent 24%) 48% 48.25%, transparent 48.25% 100%),
+    var(--color-surface-muted);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 180ms ease;
+}
+
+.project-card__image-object {
+  width: 100%;
+  height: 100%;
+  min-height: 18rem;
+  object-fit: cover;
+}
+
+.project-card__image-object span,
+.project-card__image--placeholder {
+  display: grid;
+  min-height: 18rem;
+  place-items: center;
+  padding: var(--space-lg);
+  color: var(--color-text-muted);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-caption);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project-card:hover .project-card__image {
+  transform: scale(1.01);
+}
+
+.project-card__body {
+  padding: 0 var(--space-xs) var(--space-xs);
+}
+
+.project-card__meta {
+  --cluster-gap: var(--space-xs);
+  align-items: baseline;
+  color: var(--color-text-muted);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-caption);
+}
+
+.project-card__title {
+  font-size: var(--font-size-h4);
+}
+
+.project-card__status {
+  width: max-content;
+  max-width: 100%;
+  padding: var(--space-2xs) var(--space-xs);
+  border: var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--color-accent);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-caption);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card__image {
+    transition: none;
+  }
+
+  .project-card:hover .project-card__image {
+    transform: none;
+  }
+}
+
 .services-section {
   padding-block-start: var(--space-xl);
 }

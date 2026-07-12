@@ -37,7 +37,7 @@
           <li class="primary-nav__item">
             <a
               class="nav-link{% if isCurrent %} is-current{% endif %}"
-              href="{{ item.url }}"
+              href="{{ item.url | url }}"
               {% if isCurrent %}aria-current="page"{% endif %}
             >{{ item.label }}</a>
           </li>
@@ -47,4 +47,4 @@
   </div>
 </header>
 
-<script src="/assets/js/navigation.js" defer></script>
+<script src="{{ '/assets/js/navigation.js' | url }}" defer></script>

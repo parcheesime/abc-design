@@ -37,13 +37,13 @@ title: Home
         Residential and commercial building design, permit plans, and construction drawings throughout San Diego County.
       </p>
       <div class="hero__actions" aria-label="Homepage calls to action">
-        <a class="button-primary" href="/projects/">View Projects &rarr;</a>
+        <a class="button-primary" href="{{ '/projects/' | url }}">View Projects &rarr;</a>
       </div>
     </div>
   </div>
 
   <div class="hero__visual" aria-hidden="true">
-    <div class="hero__image"></div>
+    <div class="hero__image" style="background-image: url('{{ '/assets/images/hero/hero-abc.webp' | url }}');"></div>
   </div>
 </section>
 
@@ -51,7 +51,7 @@ title: Home
   <div class="container">
     <div class="grid grid-2 grid-4 services-grid">
       {% for service in services %}
-        <a class="card service-card" href="{{ service.url }}">
+        <a class="card service-card" href="{{ service.url | url }}">
           <span class="service-card__icon" aria-hidden="true">
             {% if service.icon == "home" %}
               <svg viewBox="0 0 32 32" focusable="false">

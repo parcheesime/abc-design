@@ -39,7 +39,7 @@ title: Contact
 
     <div class="contact-form-panel">
       <!-- TODO: Connect this form to the production form handler when one is available. -->
-      <form class="contact-form" action="/thank-you/" method="get">
+      <form class="contact-form" action="{{ '/thank-you/' | url }}" method="get">
         <div class="form-field">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" autocomplete="name" required>

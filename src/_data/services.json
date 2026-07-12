@@ -1,0 +1,101 @@
+[
+  {
+    "id": "new-home",
+    "title": "I'm planning a new home",
+    "placeholder": true,
+    "content": "ABC Design works with clients to transform an idea for a new home into clear, permit-ready construction drawings. From the initial layout through coordination with engineers and consultants, the plans are prepared to support permitting, communication, and construction.",
+    "rickInput": [
+      "At what stage do clients usually contact you?",
+      "What makes your approach to new-home design different?",
+      "What types of homes or residential developments should be mentioned?"
+    ]
+  },
+  {
+    "id": "home-remodel",
+    "title": "I'm remodeling my home",
+    "placeholder": true,
+    "content": "Whether the project involves an addition, interior reconfiguration, whole-home renovation, or structural changes, ABC Design begins by understanding how the space needs to function. The resulting construction documents are prepared to reflect the project goals and the requirements of permitting and construction.",
+    "rickInput": [
+      "What types of remodels do you work on most often?",
+      "What challenges commonly appear in remodeling projects?",
+      "How involved are you in helping clients evaluate their options?"
+    ]
+  },
+  {
+    "id": "adu",
+    "title": "I'm adding an ADU",
+    "placeholder": true,
+    "content": "ABC Design prepares plans for attached and detached ADUs, garage conversions, and other accessory dwelling projects. Each project is developed with attention to the existing property, local requirements, consultant coordination, and the information needed for permit review.",
+    "rickInput": [
+      "What types of ADUs have you designed?",
+      "How do you help clients make effective use of the property?",
+      "What should clients understand before beginning an ADU project?"
+    ]
+  },
+  {
+    "id": "property-improvements",
+    "title": "I'm improving my property",
+    "placeholder": true,
+    "content": "Not every project involves a new building or major remodel. ABC Design also prepares drawings for retaining walls, garages, accessory structures, site improvements, outdoor structures, and other property improvements that require professional construction documents.",
+    "rickInput": [
+      "Which smaller projects do you handle most often?",
+      "What projects are clients surprised to learn may require plans or permits?",
+      "Are there additional property improvements that should be listed?"
+    ]
+  },
+  {
+    "id": "commercial-space",
+    "title": "I'm developing a commercial space",
+    "placeholder": true,
+    "content": "ABC Design prepares construction drawings for restaurants, retail spaces, offices, tenant improvements, and other commercial projects. These projects often require careful coordination among the client, engineers, consultants, contractors, landlords, and reviewing agencies.",
+    "rickInput": [
+      "What types of commercial spaces have you worked on?",
+      "What do commercial clients most often need help navigating?",
+      "How does your approach differ between new commercial work and tenant improvements?"
+    ]
+  },
+  {
+    "id": "larger-development",
+    "title": "I'm planning a larger development",
+    "placeholder": true,
+    "content": "ABC Design also supports larger and more complex work, including multi-unit residential projects, commercial developments, business parks, and multi-building sites. These projects require organized documentation, careful coordination, and an experienced understanding of how the parts of a development fit together.",
+    "rickInput": [
+      "What are some of the largest projects you have completed?",
+      "Which project types best demonstrate your experience at this scale?",
+      "What should clients know about your role on larger developments?"
+    ]
+  },
+  {
+    "id": "permit-ready-drawings",
+    "title": "I need permit-ready construction drawings",
+    "placeholder": true,
+    "content": "Some clients already have a concept, sketch, or general direction and need a professional drawing set prepared for permit submittal and construction. ABC Design develops coordinated documents that clearly communicate the proposed work to reviewing agencies, consultants, and contractors.",
+    "rickInput": [
+      "What does a typical permit drawing set include?",
+      "What information should clients bring to the first conversation?",
+      "Which engineers or consultants do you commonly coordinate with?"
+    ]
+  },
+  {
+    "id": "plan-check-comments",
+    "title": "I'm responding to plan check comments",
+    "placeholder": true,
+    "content": "Plan check comments are a normal part of many permitting processes. ABC Design can revise construction documents, coordinate responses with engineers and consultants, and prepare updated drawings for resubmittal so the project can continue moving through review.",
+    "rickInput": [
+      "Do you take over projects that were originally drawn by someone else?",
+      "What types of plan check comments are most common?",
+      "How do you help clients understand and respond to corrections?"
+    ]
+  },
+  {
+    "id": "project-management-support",
+    "title": "I need project management support",
+    "placeholder": true,
+    "content": "For select projects, ABC Design can remain involved beyond the drawing and permitting phases. Project management support may include consultant coordination, communication during construction, document clarification, and assistance keeping the work aligned with the approved plans.",
+    "rickInput": [
+      "On which types of projects do you provide project management?",
+      "What does your involvement typically include?",
+      "At what point should clients ask about this service?"
+    ]
+  }
+]

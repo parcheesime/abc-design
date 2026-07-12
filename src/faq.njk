@@ -4,52 +4,23 @@ title: FAQ
 ---
 {% set pageHero = {
   id: "faq-title",
-  title: "Common project questions.",
-  text: "Straight answers about building design, permits, coordination, and what to expect before a project begins."
+  title: "FAQs"
 } %}
 {% include "page-hero.njk" %}
 
-<section class="section faq-section" aria-label="Frequently asked questions">
-  <div class="container faq-list">
+<section class="section accordion-section" aria-labelledby="faq-accordion-title">
+  <div class="container accordion-section__inner">
+    <div class="section-heading section-heading--narrow accordion-section__intro">
+      <h2 id="faq-accordion-title">Common Project Questions</h2>
+      <p>
+        Straight answers about building design, permits, coordination, and what to expect before a project begins.
+      </p>
+    </div>
 
-    <details class="faq-item">
-      <summary>Do I need an architect?</summary>
-      <p>Some projects require a licensed architect, but many remodels, additions, ADUs, and tenant improvements can be handled by an experienced building designer with the right consultant support.</p>
-    </details>
-
-    <details class="faq-item">
-      <summary>Can you help with permits?</summary>
-      <p>Yes. ABC Design prepares permit-focused plans and helps coordinate responses during city review.</p>
-    </details>
-
-    <details class="faq-item">
-      <summary>Do you work with engineers?</summary>
-      <p>Yes. When structural, civil, energy, or other consultant input is needed, Rick can coordinate the plan set requirements with those professionals.</p>
-    </details>
-
-    <details class="faq-item">
-      <summary>How long does the design process take?</summary>
-      <p>Timing depends on scope, site conditions, consultant needs, and jurisdiction review. Smaller projects can move quickly, while complex projects need more coordination.</p>
-    </details>
-
-    <details class="faq-item">
-      <summary>What areas do you serve?</summary>
-      <p>ABC Design serves San Diego County.</p>
-    </details>
-
-    <details class="faq-item">
-      <summary>Do you work on commercial projects?</summary>
-      <p>Yes. Commercial work can include tenant improvements, restaurants, retail spaces, offices, and other permit plan needs.</p>
-    </details>
-
-    <details class="faq-item">
-      <summary>Do you provide project management?</summary>
-      <p>ABC Design focuses on building design, drawings, permit plans, and related coordination. Full construction project management is typically handled separately.</p>
-    </details>
-
-    <details class="faq-item">
-      <summary>Do you build the projects you design?</summary>
-      <p>No. ABC Design does not act as the builder. Rick can help prepare drawings that owners and contractors can use for bidding, permitting, and construction planning.</p>
-    </details>
+    {% set accordionItems = faq %}
+    {% set accordionIdPrefix = "faq" %}
+    {% include "components/accordion.njk" %}
   </div>
 </section>
+
+<script src="/assets/js/accordion.js" defer></script>

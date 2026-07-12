@@ -8,55 +8,15 @@ title: Services
 } %}
 {% include "page-hero.njk" %}
 
-<section class="section services-page-section" aria-labelledby="services-accordion-title">
-  <div class="container services-page-section__inner">
-    <div class="section-heading section-heading--narrow services-page-section__intro">
-      <h2 id="services-accordion-title">Common Projects Types</h2>
-      <p>
-        Every project begins in a different place. Select the situation that best describes your project to learn how ABC Design may be able to help.
-      </p>
+<section class="section accordion-section" aria-labelledby="services-accordion-title">
+  <div class="container accordion-section__inner">
+    <div class="section-heading section-heading--narrow accordion-section__intro">
+      <h2 id="services-accordion-title">Common Project Types</h2>
     </div>
 
-    <div class="faq-list service-accordion" data-accordion>
-      {% for service in services %}
-        <article class="faq-item service-accordion__item">
-          <h3 class="service-accordion__heading">
-            <button
-              class="service-accordion__trigger"
-              type="button"
-              id="service-trigger-{{ service.id }}"
-              aria-expanded="true"
-              aria-controls="service-panel-{{ service.id }}"
-            >
-              <span>{{ service.title }}</span>
-              <span class="service-accordion__icon" aria-hidden="true"></span>
-            </button>
-          </h3>
-          <div
-            class="service-accordion__panel"
-            id="service-panel-{{ service.id }}"
-            role="region"
-            aria-labelledby="service-trigger-{{ service.id }}"
-          >
-            <div class="service-accordion__content">
-              {% if service.placeholder %}
-                <p class="eyebrow service-accordion__label">Placeholder</p>
-              {% endif %}
-              <p>{{ service.content }}</p>
-
-              <div class="service-accordion__rick-input">
-                <h4>Rick's input</h4>
-                <ul>
-                  {% for prompt in service.rickInput %}
-                    <li>{{ prompt }}</li>
-                  {% endfor %}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </article>
-      {% endfor %}
-    </div>
+    {% set accordionItems = services %}
+    {% set accordionIdPrefix = "service" %}
+    {% include "components/accordion.njk" %}
   </div>
 </section>
 

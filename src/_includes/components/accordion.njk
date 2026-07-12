@@ -1,0 +1,43 @@
+<div class="accordion" data-accordion>
+  {% for item in accordionItems %}
+    <article class="accordion__item">
+      <h3 class="accordion__heading">
+        <button
+          class="accordion__trigger"
+          type="button"
+          id="{{ accordionIdPrefix }}-trigger-{{ item.id }}"
+          aria-expanded="false"
+          aria-controls="{{ accordionIdPrefix }}-panel-{{ item.id }}"
+        >
+          <span>{{ item.title }}</span>
+          <span class="accordion__icon" aria-hidden="true"></span>
+        </button>
+      </h3>
+      <div
+        class="accordion__panel"
+        id="{{ accordionIdPrefix }}-panel-{{ item.id }}"
+        role="region"
+        aria-labelledby="{{ accordionIdPrefix }}-trigger-{{ item.id }}"
+        hidden
+      >
+        <div class="accordion__content">
+          {% if item.placeholder %}
+            <p class="eyebrow accordion__label">Placeholder</p>
+          {% endif %}
+          <p>{{ item.content }}</p>
+
+          {% if item.rickInput %}
+            <div class="accordion__rick-input">
+              <h4>Rick's input</h4>
+              <ul>
+                {% for prompt in item.rickInput %}
+                  <li>{{ prompt }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+</div>

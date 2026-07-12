@@ -1,0 +1,42 @@
+[
+  {
+    "id": "architect-requirements",
+    "title": "Do I need an architect?",
+    "content": "Many residential and commercial projects can be designed by an experienced building designer. Some projects, depending on their complexity and regulations require the involvement of a architect or engineer. If you're unsure what's required for your project, ABC Design can help determine the best path forward."
+  },
+  {
+    "id": "permit-help",
+    "title": "Can you help with permits?",
+    "content": "Yes. ABC Design prepares permit-focused plans and helps coordinate responses during city review."
+  },
+  {
+    "id": "engineer-coordination",
+    "title": "Do you work with engineers?",
+    "content": "Yes. When structural, civil, energy, or other consultant input is needed, Rick can coordinate the plan set requirements with those professionals."
+  },
+  {
+    "id": "design-process-timeline",
+    "title": "How long does the design process take?",
+    "content": "Timing depends on scope, site conditions, consultant needs, and jurisdiction review. Smaller projects can move quickly, while complex projects need more coordination."
+  },
+  {
+    "id": "service-area",
+    "title": "What areas do you serve?",
+    "content": "ABC Design serves San Diego County."
+  },
+  {
+    "id": "commercial-projects",
+    "title": "Do you work on commercial projects?",
+    "content": "Yes. Commercial work can include tenant improvements, restaurants, retail spaces, offices, and other permit plan needs."
+  },
+  {
+    "id": "project-management",
+    "title": "Do you provide project management?",
+    "content": "Yes. For select projects, ABC Design can continue providing project management support beyond the design and permitting phases. Services may include consultant coordination, communication during construction, and helping keep the project moving from approved plans to completion."
+  },
+  {
+    "id": "construction-services",
+    "title": "Do you build the projects you design?",
+    "content": "No. ABC Design does not act as the builder. Rick can help prepare drawings that owners and contractors can use for bidding, permitting, construction planning, and project management."
+  }
+]

@@ -1,59 +1,43 @@
 {
-  "id": "parke-ivy",
-
+  "slug": "parke-ivy",
   "title": "Parke Ivy",
-
+  "location": "Bankers Hill, San Diego, CA",
+  "year": 2005,
+  "category": "Residential",
+  "projectType": "Multi-Family Residential",
+  "client": "Jacobs & Wexler LLC",
+  "status": "Completed",
   "featured": true,
-
-  "yearCompleted": 2007,
-
-  "status": "completed",
-
-  "location": {
-    "city": "San Diego",
-    "state": "CA"
-  },
-
-  "propertyType": "condominium",
-
-  "jobType": [
-    "residential",
-    "condominiums"
-  ],
-
+  "summary": "Six-unit row-home development in Bankers Hill consisting of two three-story residential buildings with private garages, shared site access, and coordinated architectural, civil, structural, and landscape design.",
   "services": [
-    "building design",
-    "construction documents",
-    "permitting",
-    "construction"
+    "Building Design",
+    "Site Planning",
+    "Permit Plans",
+    "Construction Documents",
+    "Multi-Family Residential Design",
+    "Consultant Coordination"
   ],
-
-  "role": [
-    "designer",
-    "builder"
+  "projectDetails": [
+    "Six luxury residences",
+    "Two three-unit buildings",
+    "Three-story row homes",
+    "Private garages",
+    "Approximately 10,700 sq ft of living space"
   ],
-
-  "summary": "Design and construction of the Parke Ivy condominium community in San Diego.",
-
-  "description": "Rick provided both the building design and construction for the Parke Ivy condominium development, creating a residential community that combined thoughtful architecture with quality construction.",
-
-  "images": [
+  "coverImage": "parke-ivy-01.webp",
+  "gallery": [
+    "parke-ivy-01.webp",
+    "parke-ivy-02.webp",
+    "parke-ivy-03.webp"
+  ],
+  "planImages": [
     {
-      "src": "/assets/images/projects/parke-ivy/hero.webp",
-      "alt": "Front exterior of the Parke Ivy condominium community",
-      "featured": true
+      "src": "parke-ivy-title-site-plan.webp",
+      "title": "Development Site Plan"
     },
     {
-      "src": "/assets/images/projects/parke-ivy/front-angle.webp",
-      "alt": "Street view of Parke Ivy"
-    },
-    {
-      "src": "/assets/images/projects/parke-ivy/courtyard.webp",
-      "alt": "Landscaped courtyard"
+      "src": "parke-ivy-utilities-site-plan.webp",
+      "title": "Site Utility Coordination"
     }
-  ],
-
-  "clientPermission": true,
-
-  "public": true
+  ]
 }

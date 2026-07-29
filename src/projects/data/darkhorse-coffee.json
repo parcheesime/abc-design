@@ -1,0 +1,29 @@
+{
+  "slug": "darkhorse-coffee",
+  "title": "Dark Horse Coffee",
+  "location": "San Diego, CA",
+  "year": 2020,
+  "category": "Commercial",
+  "projectType": "Tenant Improvement",
+  "client": "Dark Horse Coffee",
+  "summary": "Commercial tenant improvement converting an existing shop into a coffee and bakery concept. The project included interior remodeling, equipment layout, ADA accessibility improvements, plumbing, electrical, lighting, and mechanical coordination.",
+  "services": [
+    "Building Design",
+    "Permit Plans",
+    "Construction Documents",
+    "ADA Accessibility",
+    "Consultant Coordination"
+  ],
+  "status": "Completed",
+  "featured": true,
+  "coverImage": "darkhorse-coffee-01.webp",
+  "gallery": [
+    "darkhorse-coffee-01.webp",
+    "darkhorse-coffee-02.webp"
+  ],
+  "planImages": [
+    "darkhorse-a1.webp",
+    "darkhorse-a6.webp",
+    "darkhorse-a61.webp"
+  ]
+}

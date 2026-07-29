@@ -1,0 +1,27 @@
+{
+  "slug": "talmadge-room-addition",
+  "title": "Talmadge Room Addition",
+  "location": "San Diego, CA",
+  "year": 2025,
+  "category": "Residential",
+  "projectType": "Room Addition",
+  "status": "Completed",
+  "featured": true,
+  "summary": "Residential addition expanding the existing home with new living space, improved indoor-outdoor connection, and coordinated permit-ready construction documents.",
+  "services": [
+    "Building Design",
+    "Permit Plans",
+    "Construction Documents",
+    "Residential Addition"
+  ],
+  "coverImage": "talmadge-kitchen.webp",
+  "gallery": [
+    "talmadge-kitchen.webp",
+    "midcity-covered-patio.webp"
+  ],
+  "planImages": [
+    "talmadge-site-plan.webp",
+    "talmadge-existing-plans.webp",
+    "talmadge-proposed-plan.webp"
+  ]
+}

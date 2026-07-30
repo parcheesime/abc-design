@@ -29,23 +29,23 @@
     "City of San Diego permitting"
   ],
 
-  "coverImage": "ocean-beach-adu-01.webp",
+  "coverImage": "east-elevation.webp",
 
   "gallery": [
-    "ocean-beach-adu-01.webp"
+    "east-elevation.webp"
   ],
 
   "planImages": [
     {
-      "src": "ocean-beach-adu-site-plan.webp",
+      "src": "coastal-adu-0a1.webp",
       "title": "Site Plan"
     },
     {
-      "src": "ocean-beach-adu-floor-plan.webp",
+      "src": "coastal-adu-0a2.webp",
       "title": "Floor Plan"
     },
     {
-      "src": "ocean-beach-adu-elevations.webp",
+      "src": "coastal-adu-0a3.webp",
       "title": "Exterior Elevations"
     }
   ]

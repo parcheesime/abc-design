@@ -37,15 +37,15 @@
 
   "planImages": [
     {
-      "src": "chula-tacos-site-plan.webp",
+      "src": "chula-tacos-a01.webp",
       "title": "Site Plan"
     },
     {
-      "src": "chula-tacos-restaurant-layout.webp",
+      "src": "chula-tacos-a03.webp",
       "title": "Restaurant Layout"
     },
     {
-      "src": "chula-tacos-egress-plan.webp",
+      "src": "chula-tacos-a04.webp",
       "title": "Occupancy & Egress Plan"
     }
   ]

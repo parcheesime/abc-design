@@ -1,0 +1,70 @@
+{
+  "id": "la-jolla-residence",
+  "title": "La Jolla Whole House Remodel",
+  "slug": "la-jolla-whole-house-remodel",
+  "category": "Residential",
+  "service": [
+    "Whole House Remodel",
+    "Home Addition",
+    "Permit Plans"
+  ],
+  "location": "La Jolla, CA",
+  "year": "2025",
+  "featured": true,
+
+  "summary": "Comprehensive whole-house remodel and modest addition that reconfigured the home's interior around a modern courtyard while updating the exterior with clean contemporary detailing and expansive new glazing.",
+
+  "description": [
+    "This La Jolla residence received a complete interior and exterior transformation while maintaining the original footprint wherever practical. The project included a 396-square-foot addition, extensive interior reconfiguration, updated finishes, and permit-ready construction documents.",
+    "The redesign emphasizes indoor-outdoor living with a remodeled courtyard, expanded living spaces, a new primary suite, updated kitchen, and contemporary exterior elevations that create a cohesive modern appearance."
+  ],
+
+  "projectDetails": {
+    "projectType": "Whole House Remodel",
+    "location": "La Jolla, California",
+    "scope": [
+      "Whole house remodel",
+      "396 sq. ft. addition",
+      "Interior reconfiguration",
+      "Primary suite renovation",
+      "Kitchen remodel",
+      "Exterior modernization",
+      "Permit drawings"
+    ]
+  },
+
+  "gallery": [
+    {
+      "image": "hero.webp",
+      "alt": "Completed courtyard view of the remodeled La Jolla residence."
+    },
+    {
+      "image": "lajolla-a01.webp",
+      "alt": "Site plan showing the remodel and addition."
+    },
+    {
+      "image": "lajolla-a02.webp",
+      "alt": "Existing floor plan."
+    },
+    {
+      "image": "lajolla-a03.webp",
+      "alt": "Existing exterior elevations."
+    },
+    {
+      "image": "lajolla-a05.webp",
+      "alt": "Proposed floor plan after renovation."
+    },
+    {
+      "image": "lajolla-a06.webp",
+      "alt": "Proposed exterior elevations."
+    }
+  ],
+
+  "highlights": [
+    "Whole-house renovation",
+    "396 sq. ft. addition",
+    "Contemporary exterior redesign",
+    "Expanded indoor-outdoor living",
+    "Permit-ready construction documents"
+  ]
+}

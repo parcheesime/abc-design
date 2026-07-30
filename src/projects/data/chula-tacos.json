@@ -1,0 +1,52 @@
+{
+  "slug": "chula-tacos",
+  "title": "Chula Tacos",
+  "location": "San Diego, CA",
+  "year": 2022,
+  "category": "Commercial",
+  "projectType": "Restaurant Tenant Improvement",
+  "client": "Chula Tacos",
+  "status": "Completed",
+  "featured": true,
+
+  "summary": "Designed and prepared permit drawings for the tenant improvement of a 2,254-square-foot commercial space into a full-service Mexican restaurant. The project included ADA accessibility, commercial kitchen planning, life safety coordination, and construction documentation for permitting",
+
+  "services": [
+    "Commercial Tenant Improvement",
+    "Restaurant Design",
+    "Building Design",
+    "Permit Plans",
+    "ADA Compliance",
+    "Construction Documents"
+  ],
+
+  "projectDetails": [
+    "2,254 sq ft restaurant",
+    "Commercial tenant improvement",
+    "ADA accessibility upgrades",
+    "Commercial kitchen layout",
+    "Health department coordination",
+    "Permit-ready construction documents"
+  ],
+
+  "coverImage": "chula-tacos-exterior.webp",
+
+  "gallery": [
+    "chula-tacos-exterior.webp"
+  ],
+
+  "planImages": [
+    {
+      "src": "chula-tacos-site-plan.webp",
+      "title": "Site Plan"
+    },
+    {
+      "src": "chula-tacos-restaurant-layout.webp",
+      "title": "Restaurant Layout"
+    },
+    {
+      "src": "chula-tacos-egress-plan.webp",
+      "title": "Occupancy & Egress Plan"
+    }
+  ]
+}

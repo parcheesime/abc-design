@@ -1,0 +1,53 @@
+{
+  "slug": "rolando-whole-house-remodel",
+  "title": "Rolando Whole House Remodel",
+  "location": "Rolando, San Diego, CA",
+  "year": 2024,
+  "category": "Residential",
+  "projectType": "Whole House Remodel & Addition",
+  "client": "Private Residence",
+  "status": "Completed",
+  "featured": true,
+
+  "summary": "Comprehensive renovation and expansion of a 1942 single-family residence, including a substantial rear addition, redesigned living spaces, a new primary suite, and an elevated redwood deck. The project included complete permit drawings, structural coordination, and construction documentation.",
+
+  "services": [
+    "Whole House Remodel",
+    "Residential Addition",
+    "Building Design",
+    "Permit Plans",
+    "Construction Documents",
+    "Structural Coordination"
+  ],
+
+  "projectDetails": [
+    "860 sq ft rear addition",
+    "553 sq ft existing home remodeled",
+    "353 sq ft elevated redwood deck",
+    "New primary suite",
+    "Expanded kitchen and family room",
+    "Complete permit drawing set"
+  ],
+
+  "coverImage": "rolando-remodel-hero.webp",
+
+  "gallery": [
+    "rolando-remodel-01.webp",
+    "rolando-remodel-02.webp"
+  ],
+
+  "planImages": [
+    {
+      "src": "rolando-site-plan.webp",
+      "title": "Site Plan"
+    },
+    {
+      "src": "rolando-floor-plan.webp",
+      "title": "Proposed Floor Plan"
+    },
+    {
+      "src": "rolando-east-elevation.webp",
+      "title": "Rear Elevation"
+    }
+  ]
+}

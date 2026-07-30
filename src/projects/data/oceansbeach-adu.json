@@ -1,0 +1,52 @@
+{
+  "slug": "ocean-beach-rear-yard-adu",
+  "title": "Ocean Beach Rear Yard ADU",
+  "location": "Ocean Beach, San Diego, CA",
+  "year": 2025,
+  "category": "Residential",
+  "projectType": "Detached Accessory Dwelling Unit (ADU)",
+  "client": "Private Residence",
+  "status": "Permitted",
+  "featured": true,
+
+  "summary": "Design and permit drawings for a new detached accessory dwelling unit constructed behind an existing single-family home in Ocean Beach. The project included complete architectural documentation, site planning, structural coordination, energy compliance, and permitting for the City of San Diego.",
+
+  "services": [
+    "Building Design",
+    "Accessory Dwelling Unit (ADU)",
+    "Permit Plans",
+    "Construction Documents",
+    "Site Planning",
+    "Title 24 Coordination"
+  ],
+
+  "projectDetails": [
+    "894 sq ft detached ADU",
+    "Two-bedroom, two-bath layout",
+    "Complete permit drawing set",
+    "Structural and MEP coordination",
+    "Title 24 energy compliance",
+    "City of San Diego permitting"
+  ],
+
+  "coverImage": "ocean-beach-adu-01.webp",
+
+  "gallery": [
+    "ocean-beach-adu-01.webp"
+  ],
+
+  "planImages": [
+    {
+      "src": "ocean-beach-adu-site-plan.webp",
+      "title": "Site Plan"
+    },
+    {
+      "src": "ocean-beach-adu-floor-plan.webp",
+      "title": "Floor Plan"
+    },
+    {
+      "src": "ocean-beach-adu-elevations.webp",
+      "title": "Exterior Elevations"
+    }
+  ]
+}

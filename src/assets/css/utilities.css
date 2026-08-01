@@ -232,10 +232,15 @@
 }
 
 .hero h1 {
-  color: var(--color-surface);
-  font-weight: var(--font-weight-semibold);
+  color: #fff;
+  font-weight: 500;
   font-size: 2.5rem;
+  letter-spacing: 0.015em;
   line-height: 1.1;
+  text-shadow:
+    0 0 6px rgba(0, 0, 0, 0.25),
+    0 3px 12px rgba(0, 0, 0, 0.35);
+  -webkit-text-stroke: 0.5px rgba(36, 50, 67, 0.45);
 }
 
 .hero__photo {

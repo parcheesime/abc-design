@@ -88,9 +88,9 @@
 
   /* Layout */
   --content-width: 120rem;
-  --page-gutter-mobile: 1.25rem;
-  --page-gutter-tablet: 1.5rem;
-  --page-gutter-desktop: 1.875rem;
+  --page-gutter-mobile: 2.5rem;
+  --page-gutter-tablet: 2.5rem;
+  --page-gutter-desktop: 2.5rem;
   --page-gutter: var(--page-gutter-mobile);
   --section-padding: clamp(4rem, 3.23rem + 3.85vw, 6.5rem);
   --grid-gap: clamp(1.25rem, 0.94rem + 1.54vw, 2.25rem);

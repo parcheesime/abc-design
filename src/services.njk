@@ -8,16 +8,55 @@ title: Services
 } %}
 {% include "page-hero.njk" %}
 
-<section class="section accordion-section" aria-labelledby="services-accordion-title">
-  <div class="container accordion-section__inner">
-    <div class="section-heading section-heading--narrow accordion-section__intro">
-      <h2 id="services-accordion-title">Common Project Types</h2>
-    </div>
+{% set serviceRows = [
+  {
+    id: "residential",
+    title: "Residential Design",
+    description: "Custom homes, remodels, additions, and second-story expansions.",
+    icon: "residential.svg"
+  },
+  {
+    id: "commercial",
+    title: "Commercial Design",
+    description: "Restaurants, retail spaces, offices, tenant improvements, and other commercial projects.",
+    icon: "commercial.svg"
+  },
+  {
+    id: "adus",
+    title: "ADUs",
+    description: "Detached ADUs, attached ADUs, garage conversions, and junior accessory dwelling units.",
+    icon: "adu.svg"
+  },
+  {
+    id: "permits",
+    title: "Plans & Permits",
+    description: "Permit-ready construction drawings, consultant coordination, permit packages, and plan check support.",
+    icon: "plans.svg"
+  }
+] %}
 
-    {% set accordionItems = services %}
-    {% set accordionIdPrefix = "service" %}
-    {% include "components/accordion.njk" %}
+<section class="section service-list-section" aria-label="Building design services">
+  <div class="container service-list-section__inner">
+    <div class="service-list">
+      {# Replace Contact links when category-specific destinations become available. #}
+      {% for service in serviceRows %}
+        <article class="service-list__item" id="{{ service.id }}">
+          <img
+            class="service-list__icon"
+            src="{{ ('/assets/images/icons/' + service.icon) | url }}"
+            alt=""
+            width="56"
+            height="56"
+          >
+          <div class="service-list__content">
+            <h3 class="service-list__title">{{ service.title }}</h3>
+            <p class="service-list__description">{{ service.description }}</p>
+          </div>
+          <a class="service-list__link" href="{{ '/contact/' | url }}">
+            Learn More <span class="service-list__arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
   </div>
 </section>
-
-<script src="{{ '/assets/js/accordion.js' | url }}" defer></script>

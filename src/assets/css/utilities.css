@@ -962,6 +962,102 @@
   padding-block-start: var(--space-xl);
 }
 
+.service-list-section {
+  padding-block-start: 0;
+}
+
+.service-list-section__inner {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.service-list__item {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-xl);
+  padding-block: var(--space-xl);
+  border-bottom: var(--border-subtle);
+}
+
+.service-list__icon {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.service-list__content {
+  display: grid;
+  min-width: 0;
+  gap: var(--space-xs);
+}
+
+.service-list__title {
+  color: var(--color-heading);
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-medium);
+}
+
+.service-list__description {
+  max-width: 60rem;
+  color: var(--color-text);
+  line-height: var(--line-height-body);
+}
+
+.service-list__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  color: var(--color-link);
+  font-size: var(--font-size-button);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+}
+
+.service-list__link:hover {
+  color: var(--color-link-hover);
+  text-decoration: none;
+}
+
+.service-list__arrow {
+  display: inline-block;
+  transition: transform 200ms ease;
+}
+
+.service-list__item:hover .service-list__arrow,
+.service-list__link:focus-visible .service-list__arrow {
+  transform: translateX(0.25rem);
+}
+
+@media (max-width: 47.99rem) {
+  .service-list__item {
+    grid-template-columns: 3.5rem minmax(0, 1fr);
+    gap: var(--space-md);
+  }
+
+  .service-list__icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .service-list__link {
+    grid-column: 2;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-list__arrow {
+    transition: none;
+  }
+
+  .service-list__item:hover .service-list__arrow,
+  .service-list__link:focus-visible .service-list__arrow {
+    transform: none;
+  }
+}
+
 .services-grid {
   align-items: stretch;
 }

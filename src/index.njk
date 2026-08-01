@@ -30,20 +30,27 @@ title: Home
 ] %}
 
 <section class="hero" aria-labelledby="hero-title">
-  <div class="hero__inner container">
-    <div class="hero__content">
-      <h1 id="hero-title">Building Design Made Simple</h1>
-      <p class="hero__subtext">
-        Residential and commercial building design, permit plans, and construction drawings throughout San Diego County.
-      </p>
-      <div class="hero__actions" aria-label="Homepage calls to action">
-        <a class="button-primary" href="{{ '/projects/' | url }}">View Projects &rarr;</a>
-      </div>
-    </div>
-  </div>
+  <img
+    class="hero__photo"
+    src="{{ '/assets/images/hero/abc-hero-image.webp' | url }}"
+    alt=""
+    width="3000"
+    height="1820"
+  >
+  <img
+    class="hero__overlay"
+    src="{{ '/assets/images/hero/hero-overlay.webp' | url }}"
+    alt=""
+    width="3000"
+    height="1820"
+    aria-hidden="true"
+  >
 
-  <div class="hero__visual" aria-hidden="true">
-    <div class="hero__image" style="background-image: url('{{ '/assets/images/hero/hero-abc.webp' | url }}');"></div>
+  <div class="hero__content container">
+    <h1 id="hero-title">From Concept to Approval</h1>
+    <p class="hero__subtext">
+      Residential and commercial building design, permit plans, and construction drawings throughout San Diego County.
+    </p>
   </div>
 </section>
 

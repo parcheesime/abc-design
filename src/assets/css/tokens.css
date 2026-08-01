@@ -1,26 +1,31 @@
 :root {
-  /* Colors */
-  --color-warm-white: #FAF9F7;
-  --color-charcoal: #222222;
-  --color-slate-gray: #555E68;
-  --color-blueprint-blue: #355E8C;
-  --color-light-stone: #E7E4DF;
-  --color-mist-gray: #F4F5F4;
-  --color-concrete: #D7D3CE;
-  --color-dark-slate: #37404A;
-  --color-blueprint: var(--color-blueprint-blue);
+  /* Brand */
+  --color-primary: #355E8C;
 
-  --color-background: var(--color-warm-white);
+  /* Page backgrounds */
+  --color-background: #FCFBF8;
   --color-surface: #FFFFFF;
-  --color-surface-muted: var(--color-mist-gray);
-  --color-text: var(--color-charcoal);
-  --color-text-muted: var(--color-slate-gray);
-  --color-heading: var(--color-charcoal);
-  --color-border: var(--color-concrete);
-  --color-border-subtle: var(--color-light-stone);
-  --color-accent: var(--color-blueprint-blue);
-  --color-accent-dark: #284A72;
-  --color-focus: var(--color-blueprint-blue);
+
+  /* Typography */
+  --color-heading: #243243;
+  --color-text: #46525F;
+  --color-text-light: #6D7885;
+
+  /* Links */
+  --color-link: var(--color-primary);
+  --color-link-hover: #284C73;
+
+  /* Footer */
+  --color-footer: #31465C;
+  --color-footer-text: rgba(255, 255, 255, 0.92);
+
+  /* Borders */
+  --color-border: #DCE4EC;
+
+  /* Shadows */
+  --shadow-card: 0 6px 20px rgba(36, 50, 67, 0.08);
+
+  --color-focus: var(--color-primary);
 
   /* Typography */
   --font-logo: "IBM Plex Sans", system-ui, sans-serif;
@@ -76,9 +81,9 @@
   /* Borders */
   --border-width: 1px;
   --border-width-strong: 2px;
-  --border-subtle: var(--border-width) solid var(--color-border-subtle);
+  --border-subtle: var(--border-width) solid var(--color-border);
   --border-standard: var(--border-width) solid var(--color-border);
-  --border-strong: var(--border-width-strong) solid var(--color-charcoal);
+  --border-strong: var(--border-width-strong) solid var(--color-heading);
 
   /* Layout */
   --content-width: 120rem;

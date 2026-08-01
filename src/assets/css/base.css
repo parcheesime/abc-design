@@ -38,8 +38,8 @@ body,
 }
 
 ::selection {
-  background: var(--color-blueprint-blue);
-  color: var(--color-warm-white);
+  background: var(--color-primary);
+  color: var(--color-surface);
 }
 
 :where(h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd) {
@@ -94,12 +94,12 @@ h6 {
 }
 
 p {
-  color: var(--color-text-muted);
+  color: var(--color-text);
 }
 
 .lead,
 .subtext {
-  color: var(--color-text-muted);
+  color: var(--color-text);
   font-size: var(--font-size-lead);
   line-height: var(--line-height-lead);
   text-wrap: pretty;
@@ -108,14 +108,14 @@ p {
 small,
 figcaption,
 .caption {
-  color: var(--color-text-muted);
+  color: var(--color-text-light);
   font-size: var(--font-size-caption);
   line-height: var(--line-height-caption);
   text-wrap: pretty;
 }
 
 blockquote {
-  color: var(--color-charcoal);
+  color: var(--color-heading);
   font-family: var(--font-serif);
   font-size: var(--font-size-lead);
   font-style: italic;
@@ -124,8 +124,8 @@ blockquote {
 }
 
 a {
-  color: var(--color-accent);
-  text-decoration-color: color-mix(in srgb, var(--color-accent), transparent 45%);
+  color: var(--color-link);
+  text-decoration-color: color-mix(in srgb, var(--color-link), transparent 45%);
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.18em;
   transition:
@@ -134,7 +134,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-accent-dark);
+  color: var(--color-link-hover);
   text-decoration-color: currentColor;
 }
 

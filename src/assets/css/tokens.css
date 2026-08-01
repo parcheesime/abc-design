@@ -24,6 +24,7 @@
 
   /* Shadows */
   --shadow-card: 0 6px 20px rgba(36, 50, 67, 0.08);
+  --shadow-card-hover: 0 9px 24px rgba(36, 50, 67, 0.12);
 
   --color-focus: var(--color-primary);
 

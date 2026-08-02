@@ -874,6 +874,17 @@
   padding: var(--space-md);
   box-shadow: none;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.project-card:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.project-card:focus-visible {
+  border-radius: var(--radius-sm);
+  outline: var(--border-width-strong) solid var(--color-focus);
+  outline-offset: 4px;
 }
 
 .project-card:hover,
@@ -1283,6 +1294,17 @@
   height: 100%;
   color: var(--color-text);
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.service-card:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.service-card:focus-visible {
+  border-radius: var(--radius-sm);
+  outline: var(--border-width-strong) solid var(--color-focus);
+  outline-offset: 4px;
 }
 
 .service-card:hover,

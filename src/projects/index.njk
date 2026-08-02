@@ -21,14 +21,14 @@ permalink: /projects/
             <img
               class="project-card__image-object"
               src="{{ ('/assets/images/projects/' + project.assetFolder + '/' + project.coverImage) | url }}"
-              alt="{{ project.title }}"
+              alt="{{ project.coverAlt }}"
               loading="lazy"
             >
           </div>
           <div class="stack stack-sm project-card__body">
             <p class="eyebrow project-card__meta">{{ project.category }}</p>
             <h3 class="card-title project-card__title">{{ project.title }}</h3>
-            <p class="card-text">{{ project.projectType }}</p>
+            {% if project.projectType %}<p class="card-text">{{ project.projectType }}</p>{% endif %}
             <span class="button-text project-card__link">View Project &rarr;</span>
           </div>
         </a>

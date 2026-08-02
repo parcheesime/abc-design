@@ -18,12 +18,14 @@ eleventyComputed:
       >
       <div class="project-drawing-hero__panel">
         <div class="container project-drawing-hero__panel-inner">
-          <p class="eyebrow project-drawing-hero__category">{{ project.heroCategory }}</p>
+          {% if project.heroCategory %}<p class="eyebrow project-drawing-hero__category">{{ project.heroCategory }}</p>{% endif %}
           <h1>{{ project.title }}</h1>
-          <p class="project-drawing-hero__meta">
-            <span>{{ project.projectType }}</span>
-            <span>{{ project.location }}</span>
-          </p>
+          {% if project.projectType or project.location %}
+            <p class="project-drawing-hero__meta">
+              {% if project.projectType %}<span>{{ project.projectType }}</span>{% endif %}
+              {% if project.location %}<span>{{ project.location }}</span>{% endif %}
+            </p>
+          {% endif %}
         </div>
       </div>
     </header>
@@ -32,12 +34,18 @@ eleventyComputed:
       <img
         class="project-detail-hero__image"
         src="{{ ('/assets/images/projects/' + project.assetFolder + '/' + project.coverImage) | url }}"
-        alt="{{ project.title }} project"
+        alt="{{ project.coverAlt }}"
       >
       <div class="project-detail-hero__content container">
-        <p class="eyebrow project-detail-hero__category">{{ project.category }}</p>
+        {% if project.category %}<p class="eyebrow project-detail-hero__category">{{ project.category }}</p>{% endif %}
         <h1>{{ project.title }}</h1>
-        <p class="project-detail-hero__meta">{{ project.projectType }} <span aria-hidden="true">&middot;</span> {{ project.location }}</p>
+        {% if project.projectType or project.location %}
+          <p class="project-detail-hero__meta">
+            {% if project.projectType %}{{ project.projectType }}{% endif %}
+            {% if project.projectType and project.location %}<span aria-hidden="true">&middot;</span>{% endif %}
+            {% if project.location %}{{ project.location }}{% endif %}
+          </p>
+        {% endif %}
       </div>
     </header>
   {% endif %}
@@ -46,18 +54,45 @@ eleventyComputed:
     <div class="container project-overview__inner">
       <div class="project-overview__copy">
         <h2 id="project-overview-title">Project Overview</h2>
-        <p>{{ project.summary }}</p>
+        {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
+        {% for paragraph in project.description %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
       </div>
       <dl class="project-facts">
-        <div><dt>Project Type</dt><dd>{{ project.projectType }}</dd></div>
-        <div><dt>Category</dt><dd>{{ project.category }}</dd></div>
-        <div><dt>Location</dt><dd>{{ project.location }}</dd></div>
-        <div><dt>Year</dt><dd>{{ project.year }}</dd></div>
-        <div><dt>Status</dt><dd>{{ project.status }}</dd></div>
+        {% if project.projectType %}<div><dt>Project Type</dt><dd>{{ project.projectType }}</dd></div>{% endif %}
+        {% if project.category %}<div><dt>Category</dt><dd>{{ project.category }}</dd></div>{% endif %}
+        {% if project.location %}<div><dt>Location</dt><dd>{{ project.location }}</dd></div>{% endif %}
+        {% if project.year %}<div><dt>Year</dt><dd>{{ project.year }}</dd></div>{% endif %}
+        {% if project.status %}<div><dt>Status</dt><dd>{{ project.status }}</dd></div>{% endif %}
       </dl>
     </div>
   </section>
 
+  {% if project.details.length or project.highlights.length %}
+    <section class="section project-scope" aria-labelledby="project-scope-title">
+      <div class="container project-scope__inner">
+        {% if project.details.length %}
+          <div>
+            <h2 id="project-scope-title">Project Details &amp; Scope</h2>
+            <ul class="project-scope__list">
+              {% for detail in project.details %}<li>{{ detail }}</li>{% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+        {% if project.highlights.length %}
+          <div>
+            <h2{% if not project.details.length %} id="project-scope-title"{% endif %}>Project Highlights</h2>
+            <ul class="project-scope__list">
+              {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+      </div>
+    </section>
+  {% endif %}
+
+  {% if project.services.length %}
   <section class="section project-services" aria-labelledby="project-services-title">
     <div class="container project-services__inner">
       <div class="project-services__heading">
@@ -75,6 +110,7 @@ eleventyComputed:
       </ul>
     </div>
   </section>
+  {% endif %}
 
   <nav class="project-navigation container" aria-label="Project navigation">
     {% if project.previousSlug %}

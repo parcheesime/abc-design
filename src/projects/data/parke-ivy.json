@@ -3,7 +3,11 @@
   "title": "Parke Ivy",
   "location": "Bankers Hill, San Diego, CA",
   "year": 2005,
-  "category": "Residential",
+    "category": [
+    "multi-family",
+    " residential",
+    " project-management"
+  ],
   "projectType": "Multi-Family Residential",
   "client": "Jacobs & Wexler LLC",
   "status": "Completed",

@@ -58,20 +58,13 @@ eleventyComputed:
     </div>
   </section>
 
-  {% if project.slug == "ocean-beach-rear-yard-adu" %}
-    {% set categoryIcon = "adu.svg" %}
-  {% elif project.category == "Commercial" %}
-    {% set categoryIcon = "commercial.svg" %}
-  {% else %}
-    {% set categoryIcon = "residential.svg" %}
-  {% endif %}
-
   <section class="section project-services" aria-labelledby="project-services-title">
     <div class="container project-services__inner">
       <div class="project-services__heading">
-        <span class="project-services__icons" aria-hidden="true">
-          <img src="{{ ('/assets/images/icons/' + categoryIcon) | url }}" alt="">
-          <img src="{{ '/assets/images/icons/plans.svg' | url }}" alt="">
+        <span class="project-services__icons">
+          {% for icon in project.serviceIcons %}
+            <img src="{{ ('/assets/images/icons/' + icon.file) | url }}" alt="{{ icon.label }}">
+          {% endfor %}
         </span>
         <h2 id="project-services-title">Services Provided</h2>
       </div>

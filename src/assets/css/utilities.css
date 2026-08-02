@@ -1191,6 +1191,7 @@
   align-items: center;
   gap: var(--space-xl);
   padding-block: var(--space-xl);
+  scroll-margin-top: 6rem;
   border-bottom: var(--border-subtle);
 }
 

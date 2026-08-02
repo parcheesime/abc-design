@@ -156,6 +156,10 @@
   padding-block-start: 0;
 }
 
+.page-wrapper:has(.project-detail) {
+  padding-block: 0;
+}
+
 .site-footer {
   border-top: var(--border-subtle);
   background: var(--color-footer);
@@ -868,17 +872,21 @@
   align-content: start;
   gap: var(--space-lg);
   padding: var(--space-md);
+  box-shadow: none;
+  text-decoration: none;
 }
 
-.project-card:hover {
+.project-card:hover,
+.project-card:focus-visible {
   border-color: var(--color-border);
   background: var(--color-surface);
   transform: none;
+  text-decoration: none;
 }
 
 .project-card__image {
   display: grid;
-  min-height: 18rem;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   place-items: center;
   border-radius: var(--radius-sm);
@@ -892,28 +900,14 @@
 }
 
 .project-card__image-object {
+  display: block;
   width: 100%;
   height: 100%;
-  min-height: 18rem;
   object-fit: cover;
 }
 
-.project-card__image-object span,
-.project-card__image--placeholder {
-  display: grid;
-  min-height: 18rem;
-  place-items: center;
-  padding: var(--space-lg);
-  color: var(--color-text-light);
-  font-family: var(--font-sans);
-  font-size: var(--font-size-caption);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-caption);
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.project-card:hover .project-card__image {
+.project-card:hover .project-card__image,
+.project-card:focus-visible .project-card__image {
   transform: scale(1.01);
 }
 
@@ -922,30 +916,16 @@
 }
 
 .project-card__meta {
-  --cluster-gap: var(--space-xs);
-  align-items: baseline;
-  color: var(--color-text-light);
-  font-family: var(--font-sans);
-  font-size: var(--font-size-caption);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-caption);
+  color: var(--color-primary);
 }
 
 .project-card__title {
   font-size: var(--font-size-h4);
 }
 
-.project-card__status {
-  width: max-content;
-  max-width: 100%;
-  padding: var(--space-2xs) var(--space-xs);
-  border: var(--border-subtle);
-  border-radius: var(--radius-sm);
-  color: var(--color-primary);
-  font-family: var(--font-sans);
-  font-size: var(--font-size-caption);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-caption);
+.project-card__link {
+  align-self: start;
+  margin-block-start: var(--space-xs);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -953,8 +933,192 @@
     transition: none;
   }
 
-  .project-card:hover .project-card__image {
+  .project-card:hover .project-card__image,
+  .project-card:focus-visible .project-card__image {
     transform: none;
+  }
+}
+
+.project-detail-hero {
+  position: relative;
+  display: grid;
+  overflow: hidden;
+}
+
+.project-detail-hero__image,
+.project-detail-hero__content {
+  grid-area: 1 / 1;
+}
+
+.project-detail-hero__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.project-detail-hero__content {
+  z-index: 1;
+  align-self: end;
+  padding-block-end: var(--space-3xl);
+  color: var(--color-surface);
+  text-shadow: 0 2px 10px color-mix(in srgb, var(--color-heading), transparent 25%);
+}
+
+.project-detail-hero__content h1,
+.project-detail-hero__category,
+.project-detail-hero__meta {
+  color: var(--color-surface);
+}
+
+.project-detail-hero__meta {
+  margin-block-start: var(--space-sm);
+  font-size: var(--font-size-lead);
+}
+
+.project-overview__inner {
+  display: grid;
+  gap: var(--space-2xl);
+}
+
+.project-overview__copy {
+  display: grid;
+  align-content: start;
+  gap: var(--space-lg);
+}
+
+.project-facts {
+  display: grid;
+  gap: var(--space-sm);
+  margin: 0;
+}
+
+.project-facts div {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.65fr) minmax(0, 1fr);
+  gap: var(--space-md);
+  padding-block-end: var(--space-sm);
+  border-bottom: var(--border-subtle);
+}
+
+.project-facts dt {
+  color: var(--color-text-light);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+}
+
+.project-facts dd {
+  margin: 0;
+  color: var(--color-heading);
+}
+
+.project-services__inner {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.project-services {
+  padding-block: var(--space-2xl);
+}
+
+.project-services__heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.project-services__icons {
+  display: inline-flex;
+  gap: var(--space-xs);
+}
+
+.project-services__icons img {
+  width: 2.75rem;
+  height: 2.75rem;
+  object-fit: contain;
+}
+
+.project-services__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: var(--space-sm) var(--space-xl);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-services__list li {
+  padding-block: var(--space-sm);
+  border-bottom: var(--border-subtle);
+}
+
+.project-navigation {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: var(--space-md);
+  padding-block: var(--space-lg);
+  border-top: var(--border-standard);
+  border-bottom: var(--border-standard);
+}
+
+.project-navigation a {
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+}
+
+.project-navigation a:nth-child(2) {
+  text-align: center;
+}
+
+.project-navigation a:last-child {
+  text-align: right;
+}
+
+.project-cta {
+  padding-block: 0;
+}
+
+.project-cta .cta-section__inner {
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  gap: var(--space-lg);
+  padding-block: var(--space-2xl);
+  border: 0;
+  text-align: center;
+}
+
+.project-cta .cta-section__inner p {
+  max-width: 46rem;
+}
+
+.project-cta .cta-section__inner .button-primary {
+  justify-self: center;
+}
+
+@media (min-width: 48rem) {
+  .project-overview__inner {
+    grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.65fr);
+  }
+}
+
+@media (max-width: 47.99rem) {
+  .project-detail-hero__image {
+    aspect-ratio: 4 / 5;
+  }
+
+  .project-detail-hero__content {
+    padding-block-end: var(--space-xl);
+  }
+
+  .project-navigation {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-navigation a:nth-child(2) {
+    grid-column: 1 / -1;
+    grid-row: 1;
   }
 }
 

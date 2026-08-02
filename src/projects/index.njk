@@ -2,39 +2,6 @@
 layout: layout.njk
 title: Projects
 permalink: /projects/
-placeholderProjects:
-  - title: New Poway Home
-    category: Residential
-    type: New Home
-    imagePath: /assets/images/projects/poway-residence/cover.webp
-  - title: Coronado Remodel
-    category: Residential
-    type: Remodel
-    imagePath: /assets/images/projects/coronado-remodel/cover.webp
-  - title: Mid-City Remodel
-    category: Residential
-    type: Full Home Remodel
-    imagePath: /assets/images/projects/mid-city-remodel/cover.webp
-  - title: Parke Ivy
-    category: Residential
-    type: Condominiums
-    imagePath: /assets/images/projects/parke-ivy/cover.webp
-  - title: Dark Horse Coffee
-    category: Commercial
-    type: Coffee Shop
-    imagePath: /assets/images/projects/darkhorse-coffee/cover.webp
-  - title: Rosa’s Bar
-    category: Commercial
-    type: Food and Retail
-    imagePath: /assets/images/projects/restaurant-tenant-improvement/cover.webp
-  - title: Achilles No. 3
-    category: Commercial
-    type: Restaurant
-    imagePath: /assets/images/projects/achilles-no-3/cover.webp
-  - title: La Jolla
-    category: Residential
-    type: Project Type To Confirm
-    imagePath: /assets/images/projects/la-jolla/cover.webp
 ---
 {% set pageHero = {
   id: "projects-title",
@@ -48,35 +15,23 @@ placeholderProjects:
   <div class="container">
     <h2 id="projects-list-title" class="visually-hidden">Project list</h2>
     <div class="grid grid-2 projects-grid">
-      {% for project in placeholderProjects %}
-        <article class="card project-card">
-          {% if project.imagePath %}
-            <div class="project-card__image">
-              <object
-                class="project-card__image-object"
-                data="{{ project.imagePath | url }}"
-                type="image/webp"
-                aria-label="{{ project.title }} project image"
-              >
-                <span>Project image coming soon</span>
-              </object>
-            </div>
-          {% else %}
-            <div class="project-card__image project-card__image--placeholder">
-              <span>Project image coming soon</span>
-            </div>
-          {% endif %}
-
-          <div class="stack stack-sm project-card__body">
-            <div class="cluster project-card__meta" aria-label="Project classification">
-              <span class="eyebrow">{{ project.category }}</span>
-              <span>{{ project.type }}</span>
-            </div>
-            <h3 class="card-title project-card__title">{{ project.title }}</h3>
-            <p class="card-text">Project details and gallery coming soon.</p>
-            <p class="project-card__status">Project page in progress</p>
+      {% for project in selectedProjects %}
+        <a class="card project-card" href="{{ ('/projects/' + project.slug + '/') | url }}">
+          <div class="project-card__image">
+            <img
+              class="project-card__image-object"
+              src="{{ ('/assets/images/projects/' + project.assetFolder + '/' + project.coverImage) | url }}"
+              alt="{{ project.title }}"
+              loading="lazy"
+            >
           </div>
-        </article>
+          <div class="stack stack-sm project-card__body">
+            <p class="eyebrow project-card__meta">{{ project.category }}</p>
+            <h3 class="card-title project-card__title">{{ project.title }}</h3>
+            <p class="card-text">{{ project.projectType }}</p>
+            <span class="button-text project-card__link">View Project &rarr;</span>
+          </div>
+        </a>
       {% endfor %}
     </div>
   </div>

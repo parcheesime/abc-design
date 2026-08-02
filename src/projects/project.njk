@@ -1,0 +1,82 @@
+---
+layout: layout.njk
+pagination:
+  data: selectedProjects
+  size: 1
+  alias: project
+permalink: "/projects/{{ project.slug }}/index.html"
+eleventyComputed:
+  title: "{{ project.title }}"
+---
+<article class="project-detail">
+  <header class="project-detail-hero">
+    <img
+      class="project-detail-hero__image"
+      src="{{ ('/assets/images/projects/' + project.assetFolder + '/' + project.coverImage) | url }}"
+      alt="{{ project.title }} project"
+    >
+    <div class="project-detail-hero__content container">
+      <p class="eyebrow project-detail-hero__category">{{ project.category }}</p>
+      <h1>{{ project.title }}</h1>
+      <p class="project-detail-hero__meta">{{ project.projectType }} <span aria-hidden="true">&middot;</span> {{ project.location }}</p>
+    </div>
+  </header>
+
+  <section class="section project-overview" aria-labelledby="project-overview-title">
+    <div class="container project-overview__inner">
+      <div class="project-overview__copy">
+        <h2 id="project-overview-title">Project Overview</h2>
+        <p>{{ project.summary }}</p>
+      </div>
+      <dl class="project-facts">
+        <div><dt>Project Type</dt><dd>{{ project.projectType }}</dd></div>
+        <div><dt>Category</dt><dd>{{ project.category }}</dd></div>
+        <div><dt>Location</dt><dd>{{ project.location }}</dd></div>
+        <div><dt>Year</dt><dd>{{ project.year }}</dd></div>
+        <div><dt>Status</dt><dd>{{ project.status }}</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  {% if project.slug == "ocean-beach-rear-yard-adu" %}
+    {% set categoryIcon = "adu.svg" %}
+  {% elif project.category == "Commercial" %}
+    {% set categoryIcon = "commercial.svg" %}
+  {% else %}
+    {% set categoryIcon = "residential.svg" %}
+  {% endif %}
+
+  <section class="section project-services" aria-labelledby="project-services-title">
+    <div class="container project-services__inner">
+      <div class="project-services__heading">
+        <span class="project-services__icons" aria-hidden="true">
+          <img src="{{ ('/assets/images/icons/' + categoryIcon) | url }}" alt="">
+          <img src="{{ '/assets/images/icons/plans.svg' | url }}" alt="">
+        </span>
+        <h2 id="project-services-title">Services Provided</h2>
+      </div>
+      <ul class="project-services__list">
+        {% for service in project.services %}
+          <li>{{ service }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <nav class="project-navigation container" aria-label="Project navigation">
+    {% if project.previousSlug %}
+      <a href="{{ ('/projects/' + project.previousSlug + '/') | url }}">&larr; Previous Project</a>
+    {% else %}<span></span>{% endif %}
+    <a href="{{ '/projects/' | url }}">All Projects</a>
+    {% if project.nextSlug %}
+      <a href="{{ ('/projects/' + project.nextSlug + '/') | url }}">Next Project &rarr;</a>
+    {% else %}<span></span>{% endif %}
+  </nav>
+
+  <section class="cta-section project-cta" aria-label="Project inquiry">
+    <div class="cta-section__inner container">
+      <p>ABC Design can help turn your ideas into clear, permit-ready construction plans.</p>
+      <a class="button-primary" href="{{ '/contact/' | url }}">Contact Rick</a>
+    </div>
+  </section>
+</article>

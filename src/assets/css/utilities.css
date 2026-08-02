@@ -1600,6 +1600,12 @@
   }
 }
 
+@media (max-width: 668px) {
+  .hero__subtext {
+    font-size: 1.25rem;
+  }
+}
+
 @media (max-width: 29.99rem) {
   .hero h1 {
     font-size: 2.5rem;
@@ -1608,6 +1614,32 @@
 
   .hero__subtext {
     font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 365px) {
+  .hero {
+    height: auto;
+    min-height: 30rem;
+    margin-block-start: 0;
+  }
+
+  .hero__photo {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero__content {
+    position: relative;
+    top: auto;
+    align-self: center;
+    padding-block: var(--space-2xl);
+    transform: none;
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+    line-height: 1.1;
   }
 }
 

@@ -138,15 +138,52 @@ a:hover {
   text-decoration-color: currentColor;
 }
 
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible,
-summary:focus-visible,
-[tabindex]:focus-visible {
-  outline: var(--border-width-strong) solid var(--color-focus);
-  outline-offset: 3px;
+a,
+button,
+[role="button"],
+input,
+select,
+textarea,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a:focus-visible,
+  button:focus-visible,
+  [role="button"]:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  summary:focus-visible,
+  [tabindex]:focus-visible {
+    outline: var(--border-width-strong) solid var(--color-focus);
+    outline-offset: 3px;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  a:focus,
+  a:focus-visible,
+  button:focus,
+  button:focus-visible,
+  [role="button"]:focus,
+  [role="button"]:focus-visible,
+  summary:focus,
+  summary:focus-visible {
+    outline: none;
+  }
+
+  a:not(.card):focus,
+  a:not(.card):focus-visible,
+  button:focus,
+  button:focus-visible,
+  [role="button"]:focus,
+  [role="button"]:focus-visible,
+  summary:focus,
+  summary:focus-visible {
+    box-shadow: none;
+  }
 }
 
 img,

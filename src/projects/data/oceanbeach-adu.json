@@ -4,6 +4,8 @@
   "location": "Ocean Beach, San Diego, CA",
   "year": 2025,
   "category": "Residential",
+  "heroType": "drawing",
+  "heroCategory": "Residential / ADU",
   "projectType": "Detached Accessory Dwelling Unit (ADU)",
   "client": "Private Residence",
   "status": "Permitted",
@@ -29,10 +31,10 @@
     "City of San Diego permitting"
   ],
 
-  "coverImage": "east-elevation.webp",
+  "coverImage": "east-elevation.png",
 
   "gallery": [
-    "east-elevation.webp"
+    "east-elevation.png"
   ],
 
   "planImages": [

@@ -4,9 +4,11 @@
   "location": "Rolando, San Diego, CA",
   "year": 2024,
   "category": "Residential",
+  "heroType": "drawing",
+  "heroCategory": "Residential",
   "projectType": "Whole House Remodel & Addition",
   "client": "Private Residence",
-  "status": "Completed",
+  "status": "Permitted",
   "featured": true,
 
   "summary": "Comprehensive renovation and expansion of a 1942 single-family residence, including a substantial rear addition, redesigned living spaces, a new primary suite, and an elevated redwood deck. The project included complete permit drawings, structural coordination, and construction documentation.",

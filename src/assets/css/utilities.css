@@ -976,6 +976,44 @@
   font-size: var(--font-size-lead);
 }
 
+.project-drawing-hero__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: var(--color-background);
+}
+
+.project-drawing-hero__panel {
+  border-top: var(--border-subtle);
+  border-bottom: var(--border-subtle);
+  background: var(--color-background);
+}
+
+.project-drawing-hero__panel-inner {
+  display: grid;
+  gap: var(--space-sm);
+  padding-block: var(--space-xl);
+}
+
+.project-drawing-hero__panel h1 {
+  max-width: 50rem;
+  color: var(--color-heading);
+  font-size: var(--font-size-h2);
+  text-shadow: none;
+}
+
+.project-drawing-hero__category {
+  color: var(--color-primary);
+}
+
+.project-drawing-hero__meta {
+  display: grid;
+  gap: var(--space-2xs);
+  color: var(--color-text);
+  font-size: var(--font-size-lead);
+}
+
 .project-overview__inner {
   display: grid;
   gap: var(--space-2xl);

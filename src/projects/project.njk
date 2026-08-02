@@ -9,18 +9,38 @@ eleventyComputed:
   title: "{{ project.title }}"
 ---
 <article class="project-detail">
-  <header class="project-detail-hero">
-    <img
-      class="project-detail-hero__image"
-      src="{{ ('/assets/images/projects/' + project.assetFolder + '/' + project.coverImage) | url }}"
-      alt="{{ project.title }} project"
-    >
-    <div class="project-detail-hero__content container">
-      <p class="eyebrow project-detail-hero__category">{{ project.category }}</p>
-      <h1>{{ project.title }}</h1>
-      <p class="project-detail-hero__meta">{{ project.projectType }} <span aria-hidden="true">&middot;</span> {{ project.location }}</p>
-    </div>
-  </header>
+  {% if project.heroType == "drawing" %}
+    <header class="project-drawing-hero">
+      <img
+        class="project-drawing-hero__image"
+        src="{{ ('/assets/images/projects/' + project.assetFolder + '/' + project.coverImage) | url }}"
+        alt="Construction drawing for {{ project.title }}"
+      >
+      <div class="project-drawing-hero__panel">
+        <div class="container project-drawing-hero__panel-inner">
+          <p class="eyebrow project-drawing-hero__category">{{ project.heroCategory }}</p>
+          <h1>{{ project.title }}</h1>
+          <p class="project-drawing-hero__meta">
+            <span>{{ project.projectType }}</span>
+            <span>{{ project.location }}</span>
+          </p>
+        </div>
+      </div>
+    </header>
+  {% else %}
+    <header class="project-detail-hero">
+      <img
+        class="project-detail-hero__image"
+        src="{{ ('/assets/images/projects/' + project.assetFolder + '/' + project.coverImage) | url }}"
+        alt="{{ project.title }} project"
+      >
+      <div class="project-detail-hero__content container">
+        <p class="eyebrow project-detail-hero__category">{{ project.category }}</p>
+        <h1>{{ project.title }}</h1>
+        <p class="project-detail-hero__meta">{{ project.projectType }} <span aria-hidden="true">&middot;</span> {{ project.location }}</p>
+      </div>
+    </header>
+  {% endif %}
 
   <section class="section project-overview" aria-labelledby="project-overview-title">
     <div class="container project-overview__inner">

@@ -21,16 +21,30 @@
     "Site Planning",
     "Title 24 Coordination"
   ],
-
-  "projectDetails": [
-    "894 sq ft detached ADU",
-    "Two-bedroom, two-bath layout",
-    "Complete permit drawing set",
-    "Structural and MEP coordination",
-    "Title 24 energy compliance",
-    "City of San Diego permitting"
-  ],
-
+"projectDetails": [
+  "894 sq ft detached rear-yard ADU",
+  "Two-bedroom, two-bath floor plan",
+  "Open-concept kitchen and living area",
+  "Covered front entry porch",
+  "Fully electric accessory dwelling unit",
+  "New 200-amp electrical service",
+  "Dual sewage ejection pump system connected to the existing residence",
+  "Permeable parking space and entry patio",
+  "Stormwater and drainage compliance",
+  "Title 24 energy compliance",
+  "Permit-ready architectural and construction documents",
+  "City of San Diego permitting"
+],
+"highlights": [
+  "Detached ADU designed for a large Ocean Beach corner lot",
+  "Efficient two-bedroom layout with open living spaces",
+  "Fully electric residential design",
+  "Integrated utility and infrastructure planning",
+  "Permeable paving supporting stormwater requirements",
+  "Modern coastal architectural character",
+  "Coordinated structural, energy, and MEP documentation",
+  "Permit-ready construction documents for City approval"
+],
   "coverImage": "east-elevation.png",
 
   "gallery": [

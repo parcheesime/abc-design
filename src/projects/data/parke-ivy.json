@@ -12,7 +12,10 @@
   "client": "Jacobs & Wexler LLC",
   "status": "Completed",
   "featured": true,
-  "summary": "Six-unit row-home development in Bankers Hill consisting of two three-story residential buildings with private garages, shared site access, and coordinated architectural, civil, structural, and landscape design.",
+ "description": [
+  "Parke Ivy is a six-unit multi-family residential development in San Diego's Bankers Hill neighborhood consisting of two three-story row-home buildings organized around a shared internal drive. The project transformed a vacant urban infill site into a modern residential community while maximizing allowable density and maintaining efficient site circulation.",
+  "ABC Design prepared the architectural design, permit drawings, and construction documents while coordinating closely with civil, structural, geotechnical, and landscape consultants. The project included site planning, grading coordination, utility planning, Title 24 compliance, and permit-ready documentation for a complex multi-disciplinary development."
+],
   "services": [
     "Building Design",
     "Site Planning",
@@ -24,13 +27,29 @@
     "Consultant Coordination",
     "Project Management"
   ],
-  "projectDetails": [
-    "Six luxury residences",
-    "Two three-unit buildings",
-    "Three-story row homes",
-    "Private garages",
-    "Approximately 10,700 sq ft of living space"
-  ],
+"projectDetails": [
+  "Six-unit multi-family residential development",
+  "Two three-story row-home buildings",
+  "Approximately 10,700 sq ft of living space",
+  "13,898 sq ft total building area including garages",
+  "Private garages for every residence",
+  "Shared internal drive and site access",
+  "Site grading and retaining wall coordination",
+  "Architectural, civil, structural, and landscape consultant coordination",
+  "Title 24 energy compliance",
+  "Permit-ready construction documents and City of San Diego approvals"
+],
+
+"highlights": [
+  "Designed as two coordinated three-unit buildings",
+  "Urban infill development in Bankers Hill",
+  "Efficient use of a constrained hillside site",
+  "Integrated architectural, civil, structural, and landscape disciplines",
+  "Private garages with shared site circulation",
+  "Full utility and infrastructure coordination",
+  "Approximately 10,700 sq ft of residential living space",
+  "Completed multi-family residential community"
+],
   "coverImage": "parke-ivy-01.webp",
   "gallery": [
     "parke-ivy-01.webp",

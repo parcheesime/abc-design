@@ -7,15 +7,39 @@
   "projectType": "Tenant Improvement",
   "client": "Achilles Coffee Roasters",
   "summary": "Commercial tenant improvement converting a former flower shop into Achilles Coffee Roasters. The project included a new sandwich preparation kitchen, food service equipment layout, ADA accessibility improvements, and construction documents for permitting while maintaining the existing dining area.",
-  "services": [
-    "Building Design",
-    "Permit Plans",
-    "Construction Documents",
-    "Tenant Improvement",
-    "ADA Accessibility",
-    "Food Service Design",
-    "Consultant Coordination"
-  ],
+"services": [
+  "Commercial Tenant Improvement",
+  "Building Design",
+  "Commercial Kitchen Design",
+  "Food Service Planning",
+  "Permit Plans",
+  "Construction Documents",
+  "ADA Accessibility",
+  "Health Department Coordination",
+  "MEP Coordination"
+],
+  "projectDetails": [
+  "960 sq ft tenant space",
+  "280 sq ft tenant improvement",
+  "680 sq ft existing dining area retained",
+  "Conversion of a former flower shop into a commercial sandwich preparation kitchen",
+  "Commercial food preparation and equipment layout",
+  "County Health Department plan coordination",
+  "ADA accessibility improvements including accessible dining accommodations",
+  "Commercial plumbing and grease interceptor coordination",
+  "Mechanical, electrical, and utility coordination",
+  "Construction documents for City of San Diego permitting"
+],
+"highlights": [
+  "Adaptive reuse of an existing commercial tenant space",
+  "Designed to support Achilles Coffee Roasters operations",
+  "Efficient commercial kitchen workflow",
+  "Integrated commercial food-service equipment planning",
+  "County Health Department compliant kitchen design",
+  "ADA accessibility improvements",
+  "Minimal impact to the existing customer dining area",
+  "Permit-ready construction documents"
+],
   "status": "Permitted",
   "featured": true,
   "coverImage": "achilles-coffee-01.webp",

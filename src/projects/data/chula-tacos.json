@@ -10,25 +10,41 @@
   "featured": true,
 
   "summary": "Designed and prepared permit drawings for the tenant improvement of a 2,254-square-foot commercial space into a full-service Mexican restaurant. The project included ADA accessibility, commercial kitchen planning, life safety coordination, and construction documentation for permitting",
-
-  "services": [
-    "Commercial Tenant Improvement",
-    "Restaurant Design",
-    "Building Design",
-    "Permit Plans",
-    "ADA Compliance",
-    "Construction Documents"
-  ],
-
-  "projectDetails": [
-    "2,254 sq ft restaurant",
-    "Commercial tenant improvement",
-    "ADA accessibility upgrades",
-    "Commercial kitchen layout",
-    "Health department coordination",
-    "Permit-ready construction documents"
-  ],
-
+"services": [
+  "Commercial Tenant Improvement",
+  "Restaurant Design",
+  "Commercial Kitchen Design",
+  "Food Service Planning",
+  "Building Design",
+  "Permit Plans",
+  "Construction Documents",
+  "ADA Accessibility",
+  "Health Department Coordination",
+  "MEP Coordination"
+],
+"projectDetails": [
+  "2,254 sq ft restaurant tenant improvement",
+  "Conversion of a newly constructed commercial shell into a full-service Mexican restaurant",
+  "Commercial kitchen and food preparation design",
+  "Type I kitchen exhaust hood and fire suppression coordination",
+  "Walk-in refrigerator and commercial freezer planning",
+  "ADA-compliant entrance, restrooms, dining, and service counters",
+  "Commercial kitchen equipment and utility coordination",
+  "Mechanical, plumbing, electrical, and HVAC coordination",
+  "Occupancy change from Group B to Assembly A-2",
+  "Permit-ready architectural and construction documents",
+  "City of San Diego permitting and Health Department coordination"
+],
+"highlights": [
+  "Complete restaurant build-out from an unoccupied shell space",
+  "Full-service commercial kitchen design",
+  "Integrated Type I hood and fire suppression systems",
+  "Comprehensive ADA accessibility improvements",
+  "Commercial food-service equipment planning",
+  "Coordinated architectural, mechanical, electrical, and plumbing disciplines",
+  "Efficient customer circulation and restaurant workflow",
+  "Permit-ready construction documents for restaurant operations"
+],
   "coverImage": "chula-tacos-exterior.webp",
 
   "gallery": [

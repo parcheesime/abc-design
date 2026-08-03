@@ -1,0 +1,76 @@
+{
+  "slug": "talmadge-room-addition",
+  "title": "Talmadge Room Addition",
+  "location": "Talmadge, San Diego, CA",
+  "year": 2025,
+  "planYear": 2021,
+  "category": "Residential",
+  "heroType": "photo",
+  "heroCategory": "Residential / Addition",
+  "projectType": "Master Suite & Rear Addition",
+  "client": "Private Residence",
+  "status": "Permitted",
+  "featured": true,
+  "summary": "Residential renovation and single-story rear addition that expanded a 1961 home with a new primary suite, family room, and covered outdoor living area. The project included a 385-square-foot addition, a 180-square-foot covered patio, a small garage expansion to connect it to the residence, and coordinated permit-ready construction documents.",
+  "description": [
+    "The project reworked the rear portion of the existing single-family residence to create a more functional layout centered on a new primary bedroom suite and expanded family space. The proposed plan adds a primary bedroom, private bathroom, walk-in closet, family room, laundry area, and improved circulation while retaining much of the original home.",
+    "A new covered patio extends the living area outdoors beneath an exposed wood ceiling, strengthening the connection between the interior and rear yard. The scope also included enlarging the detached garage by 25 square feet so it could connect to the residence, along with energy, structural, drainage, and building-code coordination for City of San Diego permitting."
+  ],
+  "services": [
+    "Building Design",
+    "Residential Addition",
+    "Interior Reconfiguration",
+    "Permit Plans",
+    "Construction Documents",
+    "Site Planning",
+    "Structural Coordination",
+    "Title 24 Energy Coordination",
+    "MEP Coordination"
+  ],
+  "projectDetails": [
+    "385 sq ft single-story rear addition",
+    "180 sq ft covered rear patio",
+    "New primary bedroom suite",
+    "New primary bathroom and walk-in closet",
+    "Expanded family room",
+    "New laundry area",
+    "25 sq ft garage expansion connecting the garage to the residence",
+    "Permit-ready architectural and construction documents"
+  ],
+  "highlights": [
+    "Primary suite addition",
+    "Expanded family living space",
+    "Covered indoor-outdoor living area",
+    "Exposed wood patio ceiling",
+    "Garage connection to the residence",
+    "Energy and structural coordination"
+  ],
+  "coverImage": "midcity-covered-patio.webp",
+  "gallery": [
+    {
+      "image": "talmadge-kitchen.webp",
+      "alt": "Remodeled kitchen and family room within the expanded Talmadge residence."
+    },
+    {
+      "image": "midcity-covered-patio.webp",
+      "alt": "Covered rear patio with an exposed wood ceiling and ceiling fan."
+    }
+  ],
+  "planImages": [
+    {
+      "src": "talmadge-site-plan.webp",
+      "title": "Site Plan & Project Information",
+      "alt": "Site plan and project information for the Talmadge rear addition."
+    },
+    {
+      "src": "talmadge-existing-plans.webp",
+      "title": "Existing Floor Plan & Elevations",
+      "alt": "Existing floor plan and exterior elevations before the addition."
+    },
+    {
+      "src": "talmadge-proposed-plan.webp",
+      "title": "Proposed Floor Plan",
+      "alt": "Proposed floor plan showing the new primary suite, family room, and covered patio."
+    }
+  ]
+}

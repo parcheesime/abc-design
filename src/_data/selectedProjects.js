@@ -5,7 +5,7 @@ const projectSources = [
   ["parke-ivy", "parke-ivy.json"],
   ["darkhorse-coffee", "darkhorse-coffee.json"],
   ["lajolla-remodel", "la-jolla.json"],
-  ["mid-city-remodel", "mid-city-remodel.json"],
+  ["mid-city-remodel", "mid-city-remodel-completed.json"],
   ["ocean-beach", "oceanbeach-adu.json"],
   ["rolando-remodel", "rolando-remodel.json"],
   ["achilles-no-3", "achilles-no-3.json"],

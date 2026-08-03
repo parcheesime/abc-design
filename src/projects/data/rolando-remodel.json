@@ -12,25 +12,42 @@
   "featured": true,
 
   "summary": "Comprehensive renovation and expansion of a 1942 single-family residence, including a substantial rear addition, redesigned living spaces, a new primary suite, and an elevated redwood deck. The project included complete permit drawings, structural coordination, and construction documentation.",
+"services": [
+  "Whole House Remodel",
+  "Residential Addition",
+  "Building Design",
+  "Permit Plans",
+  "Construction Documents",
+  "Site Planning",
+  "Structural Coordination",
+  "Title 24 Energy Compliance",
+  "City of San Diego Permitting"
+],
 
-  "services": [
-    "Whole House Remodel",
-    "Residential Addition",
-    "Building Design",
-    "Permit Plans",
-    "Construction Documents",
-    "Structural Coordination"
-  ],
-
-  "projectDetails": [
-    "860 sq ft rear addition",
-    "553 sq ft existing home remodeled",
-    "353 sq ft elevated redwood deck",
-    "New primary suite",
-    "Expanded kitchen and family room",
-    "Complete permit drawing set"
-  ],
-
+"projectDetails": [
+  "860 sq ft single-story rear addition",
+  "553 sq ft of existing home remodeled",
+  "353 sq ft elevated redwood deck",
+  "New primary bedroom suite with walk-in closet",
+  "New primary bathroom and powder room",
+  "Expanded kitchen with large island and pantry",
+  "New dining and family rooms",
+  "Five Solatube skylights providing natural daylight",
+  "Structural coordination for hillside deck and foundations",
+  "Title 24 energy compliance",
+  "Permit-ready architectural and construction documents",
+  "City of San Diego permitting"
+],
+"highlights": [
+  "Complete transformation of a 1942 residence",
+  "Large rear addition integrated with the existing home",
+  "Spacious primary suite with modern amenities",
+  "Open-concept kitchen, dining, and family living",
+  "Elevated redwood deck overlooking the rear yard",
+  "Natural daylight enhanced with five Solatube skylights",
+  "Complex hillside and retaining wall coordination",
+  "Comprehensive permit-ready construction documents"
+],
   "coverImage": "rolando-remodel-hero.webp",
 
   "gallery": [

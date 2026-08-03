@@ -3,11 +3,22 @@
   "title": "La Jolla Whole House Remodel",
   "slug": "la-jolla-whole-house-remodel",
   "category": "Residential",
-  "service": [
-    "Whole House Remodel",
-    "Home Addition",
-    "Permit Plans"
-  ],
+"services": [
+  "Whole House Remodel",
+  "Residential Addition",
+  "Building Design",
+  "Permit Plans",
+  "Construction Documents",
+  "Site Planning",
+  "Space Planning",
+  "Exterior Renovation",
+  "Structural Coordination",
+  "Title 24 Energy Compliance",
+  "Stormwater Compliance",
+  "Consultant Coordination",
+  "La Jolla Shores Planned District Review",
+  "City of San Diego Permitting"
+],
   "location": "La Jolla, CA",
   "year": "2025",
   "status": "Permitted",
@@ -15,25 +26,35 @@
 
   "summary": "Comprehensive whole-house remodel and modest addition that reconfigured the home's interior around a modern courtyard while updating the exterior with clean contemporary detailing and expansive new glazing.",
 
-  "description": [
-    "This La Jolla residence received a complete interior and exterior transformation while maintaining the original footprint wherever practical. The project included a 396-square-foot addition, extensive interior reconfiguration, updated finishes, and permit-ready construction documents.",
-    "The redesign emphasizes indoor-outdoor living with a remodeled courtyard, expanded living spaces, a new primary suite, updated kitchen, and contemporary exterior elevations that create a cohesive modern appearance."
-  ],
+"description": [
+  "This La Jolla residence underwent a comprehensive whole-house remodel and carefully designed addition that modernized the home while respecting the architectural character of the La Jolla Shores Planned District. The project included a 396-square-foot addition, complete interior reconfiguration, a redesigned primary suite, remodeled kitchen, expanded living and dining areas, and extensive exterior improvements that strengthened the home's connection to the central courtyard.",
+  "ABC Design prepared the permit-ready construction documents and coordinated the project through both the City of San Diego building permit process and the La Jolla Shores Planned District review. The scope included architectural design, structural coordination, energy compliance, stormwater requirements, exterior modernization, and consultant coordination to successfully obtain community design approval and construction permits."
+],
 
-  "projectDetails": {
-    "projectType": "Whole House Remodel",
-    "location": "La Jolla, California",
-    "scope": [
-      "Whole house remodel",
-      "396 sq. ft. addition",
-      "Interior reconfiguration",
-      "Primary suite renovation",
-      "Kitchen remodel",
-      "Exterior modernization",
-      "Permit drawings"
-    ]
-  },
-
+"projectDetails": [
+  "Whole-house remodel",
+  "396 sq ft residential addition",
+  "Interior reconfiguration",
+  "New primary suite with walk-in closets and sauna",
+  "Expanded living and dining areas",
+  "Remodeled kitchen with pantry and wine storage",
+  "Permeable courtyard improvements",
+  "Exterior modernization and restoration of original stucco",
+  "Title 24 energy compliance",
+  "Stormwater and environmental compliance",
+  "La Jolla Shores Planned District review",
+  "City of San Diego permit-ready construction documents"
+],
+"highlights": [
+  "Whole-house transformation in La Jolla Shores",
+  "Approved through the La Jolla Shores Planned District review process",
+  "City of San Diego permitted construction documents",
+  "Modernized interior centered around a redesigned courtyard",
+  "New primary suite with spa-inspired amenities",
+  "Indoor-outdoor living enhanced through thoughtful site planning",
+  "Exterior restoration while preserving neighborhood character",
+  "Comprehensive architectural, structural, and energy coordination"
+],
   "gallery": [
     {
       "image": "hero.webp",
@@ -59,13 +80,5 @@
       "image": "lajolla-a06.webp",
       "alt": "Proposed exterior elevations."
     }
-  ],
-
-  "highlights": [
-    "Whole-house renovation",
-    "396 sq. ft. addition",
-    "Contemporary exterior redesign",
-    "Expanded indoor-outdoor living",
-    "Permit-ready construction documents"
   ]
 }

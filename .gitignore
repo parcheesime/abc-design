@@ -1,5 +1,7 @@
 node_modules/
 _site/
+.lighthouseci/
+reports/lighthouse/
 .vscode/
 .DS_Store
 

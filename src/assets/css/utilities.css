@@ -9,6 +9,7 @@
   z-index: 20;
   top: var(--space-sm);
   left: var(--space-sm);
+  min-height: 3rem;
   padding: var(--space-xs) var(--space-sm);
   border-radius: var(--radius-sm);
   background: var(--color-heading);
@@ -138,7 +139,7 @@
 .nav-link {
   display: inline-flex;
   align-items: center;
-  min-height: 2.5rem;
+  min-height: 3rem;
   border-bottom: var(--border-width-strong) solid transparent;
 }
 
@@ -729,6 +730,10 @@
   color: var(--color-footer-text);
 }
 
+.site-footer__logo {
+  min-height: 3rem;
+}
+
 .site-footer__logo .logo__abc {
   -webkit-text-stroke-color: var(--color-footer-text);
 }
@@ -785,7 +790,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.875rem;
+  min-height: 3rem;
   padding: var(--space-xs) var(--space-lg);
   border: var(--border-width) solid transparent;
   border-radius: var(--radius-sm);
@@ -1262,6 +1267,7 @@
 .service-list__link {
   display: inline-flex;
   align-items: center;
+  min-height: 3rem;
   gap: var(--space-2xs);
   color: var(--color-link);
   font-size: var(--font-size-button);

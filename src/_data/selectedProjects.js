@@ -13,13 +13,37 @@ const projectSources = [
 ];
 
 const serviceIconByCategory = {
-  residential: { label: "Residential Design", file: "residential.svg" },
-  commercial: { label: "Commercial Design", file: "commercial.svg" },
-  adu: { label: "ADUs", file: "adu.svg" },
-  "plans-permits": { label: "Plans & Permits", file: "plans.svg" },
-  "multi-family": { label: "Residential Design", file: "residential.svg" },
-  "project-management": { label: "Project Management", file: "management.svg" }
+  residential: { label: "Residential Design", file: "residential.svg", width: 48.030975, height: 40.825836 },
+  commercial: { label: "Commercial Design", file: "commercial.svg", width: 49.634605, height: 46.811378 },
+  adu: { label: "ADUs", file: "adu.svg", width: 60.268894, height: 40.564442 },
+  "plans-permits": { label: "Plans & Permits", file: "plans.svg", width: 49.207718, height: 51.55938 },
+  "multi-family": { label: "Residential Design", file: "residential.svg", width: 48.030975, height: 40.825836 },
+  "project-management": { label: "Project Management", file: "management.svg", width: 444.03079, height: 562.90814 }
 };
+
+const coverDimensionsByFile = {
+  "achilles-coffee-01.webp": { width: 1344, height: 1008 },
+  "chula-tacos-exterior.webp": { width: 900, height: 639 },
+  "darkhorse-coffee-02.webp": { width: 708, height: 567 },
+  "east-elevation.png": { width: 1341, height: 602 },
+  "hero.webp": { width: 1416, height: 1066 },
+  "midcity-covered-patio.webp": { width: 1216, height: 1294 },
+  "parke-ivy-01.webp": { width: 5712, height: 4284 },
+  "rolando-remodel-hero.webp": { width: 664, height: 396 }
+};
+
+function getMetaDescription(project) {
+  const description = (project.metaDescription || project.summary || project.description?.[0] || "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (description.length <= 160) {
+    return description;
+  }
+
+  const shortened = description.slice(0, 157);
+  return `${shortened.slice(0, shortened.lastIndexOf(" "))}...`;
+}
 
 function getServiceIcons(project) {
   const categories = (Array.isArray(project.category) ? project.category : [project.category])
@@ -112,6 +136,7 @@ function normalizeProject(project, assetFolder) {
     : project.projectDetails?.scope || [];
   const coverImage = project.coverImage || gallery[0]?.src;
   const coverAlt = gallery.find(({ src }) => src === coverImage)?.alt || `${project.title} project`;
+  const coverDimensions = coverDimensionsByFile[coverImage];
 
   return {
     ...project,
@@ -122,6 +147,9 @@ function normalizeProject(project, assetFolder) {
     highlights: Array.isArray(project.highlights) ? project.highlights : [],
     coverImage,
     coverAlt,
+    coverWidth: coverDimensions?.width,
+    coverHeight: coverDimensions?.height,
+    metaDescription: getMetaDescription(project),
     gallery,
     planImages
   };

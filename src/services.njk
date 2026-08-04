@@ -1,6 +1,7 @@
 ---
 layout: layout.njk
 title: Services
+description: Explore ABC Design's residential and commercial building design, permit planning, and construction drawing services for projects throughout San Diego County.
 ---
 {% set pageHero = {
   id: "services-title",
@@ -55,7 +56,7 @@ title: Services
             height="56"
           >
           <div class="service-list__content">
-            <h3 class="service-list__title">{{ service.title }}</h3>
+            <h2 class="service-list__title">{{ service.title }}</h2>
             <p class="service-list__description">{{ service.description }}</p>
           </div>
           <a class="service-list__link" href="{{ '/contact/' | url }}">

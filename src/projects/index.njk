@@ -1,6 +1,7 @@
 ---
 layout: layout.njk
 title: Projects
+description: View selected ABC Design residential remodels, additions, ADUs, restaurants, and commercial tenant improvements completed throughout San Diego County.
 permalink: /projects/
 ---
 {% set pageHero = {
@@ -23,6 +24,8 @@ permalink: /projects/
               src="{{ ('/assets/images/projects/' + project.assetFolder + '/' + project.coverImage) | url }}"
               alt="{{ project.coverAlt }}"
               loading="lazy"
+              width="{{ project.coverWidth }}"
+              height="{{ project.coverHeight }}"
             >
           </div>
           <div class="stack stack-sm project-card__body">

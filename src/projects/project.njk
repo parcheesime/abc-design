@@ -15,6 +15,8 @@ eleventyComputed:
         class="project-drawing-hero__image"
         src="{{ ('/assets/images/projects/' + project.assetFolder + '/' + project.coverImage) | url }}"
         alt="Construction drawing for {{ project.title }}"
+        width="{{ project.coverWidth }}"
+        height="{{ project.coverHeight }}"
       >
       <div class="project-drawing-hero__panel">
         <div class="container project-drawing-hero__panel-inner">
@@ -35,6 +37,8 @@ eleventyComputed:
         class="project-detail-hero__image"
         src="{{ ('/assets/images/projects/' + project.assetFolder + '/' + project.coverImage) | url }}"
         alt="{{ project.coverAlt }}"
+        width="{{ project.coverWidth }}"
+        height="{{ project.coverHeight }}"
       >
       <div class="project-detail-hero__content container">
         {% if project.category %}<p class="eyebrow project-detail-hero__category">{{ project.category }}</p>{% endif %}
@@ -98,7 +102,12 @@ eleventyComputed:
       <div class="project-services__heading">
         <span class="project-services__icons">
           {% for icon in project.serviceIcons %}
-            <img src="{{ ('/assets/images/icons/' + icon.file) | url }}" alt="{{ icon.label }}">
+            <img
+              src="{{ ('/assets/images/icons/' + icon.file) | url }}"
+              alt="{{ icon.label }}"
+              width="{{ icon.width }}"
+              height="{{ icon.height }}"
+            >
           {% endfor %}
         </span>
         <h2 id="project-services-title">Services Provided</h2>

@@ -16,7 +16,7 @@ function findHtmlPages(directory, relativeDirectory = "") {
 }
 
 const auditUrls = findHtmlPages(outputDirectory).map(
-  (pagePath) => `http://localhost:8089/abc-design/${pagePath}`
+  (pagePath) => `http://localhost:8089/${pagePath}`
 );
 
 module.exports = {

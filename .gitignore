@@ -2,3 +2,7 @@ node_modules/
 _site/
 .vscode/
 .DS_Store
+
+# Original customer plan sets
+**/*.pdf
+src/projects/plans/**/*.pdf

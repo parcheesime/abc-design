@@ -39,8 +39,24 @@ description: Tell ABC Design about your San Diego residential or commercial proj
     </aside>
 
     <div class="contact-form-panel">
-      <!-- TODO: Connect this form to the production form handler when one is available. -->
-      <form class="contact-form" action="{{ '/thank-you/' | url }}" method="get">
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/maewwqnv"
+        method="post"
+      >
+        <input type="hidden" name="_subject" value="New ABC Design project inquiry">
+
+        <div class="form-field visually-hidden" aria-hidden="true">
+          <label for="company">Company</label>
+          <input
+            id="company"
+            name="_gotcha"
+            type="text"
+            tabindex="-1"
+            autocomplete="off"
+          >
+        </div>
+
         <div class="form-field">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" autocomplete="name" required>

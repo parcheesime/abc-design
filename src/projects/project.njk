@@ -134,7 +134,12 @@ eleventyComputed:
   <section class="cta-section project-cta" aria-label="Project inquiry">
     <div class="cta-section__inner container">
       <p>ABC Design can help turn your ideas into clear, permit-ready construction plans.</p>
-      <a class="button-primary" href="{{ '/contact/' | url }}">Contact Rick</a>
+      <a
+        class="button-primary"
+        href="{{ '/contact/' | url }}"
+        data-analytics-cta="Contact Rick"
+        data-analytics-location="Project Detail"
+      >Contact Rick</a>
     </div>
   </section>
 </article>

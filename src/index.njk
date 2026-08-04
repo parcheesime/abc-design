@@ -50,7 +50,12 @@ description: ABC Design provides residential and commercial building design, per
   <div class="container">
     <div class="grid grid-2 grid-4 services-grid">
       {% for service in services %}
-        <a class="card service-card" href="{{ service.url | url }}">
+        <a
+          class="card service-card"
+          href="{{ service.url | url }}"
+          data-analytics-cta="Learn More"
+          data-analytics-location="Services"
+        >
           <span class="service-card__icon" aria-hidden="true">
             <img
               src="{{ ('/assets/images/icons/' + service.icon) | url }}"

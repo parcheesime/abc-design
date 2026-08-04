@@ -59,7 +59,12 @@ description: Explore ABC Design's residential and commercial building design, pe
             <h2 class="service-list__title">{{ service.title }}</h2>
             <p class="service-list__description">{{ service.description }}</p>
           </div>
-          <a class="service-list__link" href="{{ '/contact/' | url }}">
+          <a
+            class="service-list__link"
+            href="{{ '/contact/' | url }}"
+            data-analytics-cta="Learn More"
+            data-analytics-location="Services"
+          >
             Learn More <span class="service-list__arrow" aria-hidden="true">&rarr;</span>
           </a>
         </article>

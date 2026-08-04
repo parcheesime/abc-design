@@ -186,6 +186,20 @@
   line-height: var(--line-height-caption);
 }
 
+.site-footer__credits {
+  text-align: right;
+}
+
+.site-footer__credits span {
+  display: block;
+}
+
+.site-footer__photography {
+  margin-top: var(--space-2xs);
+  font-size: 0.875em;
+  opacity: 0.8;
+}
+
 .site-main:has(.hero) {
   overflow-x: clip;
 }
@@ -231,7 +245,9 @@
   width: 100%;
   max-width: 58rem;
   font-size: 1.25rem;
+  font-weight: var(--font-weight-medium);
   line-height: var(--line-height-lead);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
   text-wrap: balance;
 }
 
@@ -1436,6 +1452,16 @@
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
   text-wrap: pretty;
+}
+
+@media (min-width: 23.8125rem) and (max-width: 28.9375rem) {
+  .experience-section__separator--results {
+    display: none;
+  }
+
+  .experience-section__separator--results + span {
+    flex-basis: 100%;
+  }
 }
 
 @media (max-width: 23.75rem) {

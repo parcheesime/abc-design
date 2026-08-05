@@ -1686,7 +1686,7 @@
 
   .hero__content {
     position: relative;
-    top: auto;
+    top: -1rem; 
     align-self: center;
     padding-block: var(--space-2xl);
     transform: none;
@@ -1696,6 +1696,7 @@
     font-size: 2.875rem;
     font-weight: var(--font-weight-semibold);
     line-height: 1.1;
+    margin-bottom: 1rem;
     text-shadow:
       0 0 7px rgba(0, 0, 0, 0.3),
       0 3px 14px rgba(0, 0, 0, 0.45);

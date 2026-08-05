@@ -1657,7 +1657,6 @@
   }
 
   .hero h1 {
-    max-width: none;
     font-size: 3.25rem;
     line-height: 1.05;
   }
@@ -1686,32 +1685,17 @@
 
   .hero__content {
     position: relative;
-    top: -1rem; 
+    top: -2rem;
     align-self: center;
+    gap: calc(var(--space-md) + 2rem);
     padding-block: var(--space-2xl);
     transform: none;
   }
 
   .hero h1 {
-    font-size: 2.875rem;
-    font-weight: var(--font-weight-semibold);
-    line-height: 1.1;
-    margin-bottom: 1rem;
     text-shadow:
       0 0 7px rgba(0, 0, 0, 0.3),
       0 3px 14px rgba(0, 0, 0, 0.45);
-  }
-
-  .hero__subtext {
-    font-size: 1.25rem;
-  }
-}
-
-@media (max-width: 365px) {
-  .hero h1 {
-    font-size: 2.875rem;
-    font-weight: var(--font-weight-semibold);
-    line-height: 1.1;
   }
 }
 

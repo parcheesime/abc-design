@@ -1,7 +1,6 @@
 # ABC Design Website Style Guide
 
 > This document defines the visual design system for ABC Design.
-> Engineering standards, coding conventions, and AI contributor guidance are maintained separately in `AGENTS.md`.
 
 **Design Direction v1.0**
 

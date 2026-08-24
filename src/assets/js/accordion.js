@@ -8,8 +8,6 @@
       return;
     }
 
-    accordion.classList.add('is-accordion-enhanced');
-
     triggers.forEach((trigger) => {
       const panelId = trigger.getAttribute('aria-controls');
       const panel = panelId ? document.getElementById(panelId) : null;
@@ -26,15 +24,6 @@
 
         trigger.setAttribute('aria-expanded', String(!isExpanded));
         panel.hidden = isExpanded;
-      });
-
-      trigger.addEventListener('keydown', (event) => {
-        if (event.key !== 'Enter' && event.key !== ' ') {
-          return;
-        }
-
-        event.preventDefault();
-        trigger.click();
       });
     });
   });

@@ -3,7 +3,7 @@
   const toggle = document.querySelector('.nav-toggle');
   const navigation = document.querySelector('#primary-navigation');
   const navigationLinks = navigation ? navigation.querySelectorAll('a') : [];
-  const mobileQuery = window.matchMedia('(max-width: 47.99rem)');
+  const mobileQuery = window.matchMedia('(max-width: 63.99rem)');
 
   if (!header || !toggle || !navigation) {
     return;
@@ -11,6 +11,10 @@
 
   const syncNavigationAccess = (isOpen) => {
     const isHiddenMobileMenu = mobileQuery.matches && !isOpen;
+
+    if (isHiddenMobileMenu && navigation.contains(document.activeElement)) {
+      toggle.focus();
+    }
 
     navigation.inert = isHiddenMobileMenu;
 
@@ -31,13 +35,16 @@
 
   const setMenuState = (isOpen) => {
     toggle.setAttribute('aria-expanded', String(isOpen));
-    header.classList.toggle('is-nav-open', isOpen);
     syncNavigationAccess(isOpen);
   };
 
-  header.classList.add('is-nav-enhanced');
+  header.classList.add('is-nav-enhanced', 'is-nav-initializing');
   toggle.hidden = false;
   setMenuState(false);
+
+  requestAnimationFrame(() => {
+    header.classList.remove('is-nav-initializing');
+  });
 
   toggle.addEventListener('click', () => {
     const isOpen = toggle.getAttribute('aria-expanded') === 'true';

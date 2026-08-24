@@ -13,12 +13,12 @@ const projectSources = [
 ];
 
 const serviceIconByCategory = {
-  residential: { label: "Residential Design", file: "residential.svg", width: 48.030975, height: 40.825836 },
-  commercial: { label: "Commercial Design", file: "commercial.svg", width: 49.634605, height: 46.811378 },
-  adu: { label: "ADUs", file: "adu.svg", width: 60.268894, height: 40.564442 },
-  "plans-permits": { label: "Plans & Permits", file: "plans.svg", width: 49.207718, height: 51.55938 },
-  "multi-family": { label: "Residential Design", file: "residential.svg", width: 48.030975, height: 40.825836 },
-  "project-management": { label: "Project Management", file: "management.svg", width: 444.03079, height: 562.90814 }
+  residential: { file: "residential.svg", width: 48.030975, height: 40.825836 },
+  commercial: { file: "commercial.svg", width: 49.634605, height: 46.811378 },
+  adu: { file: "adu.svg", width: 60.268894, height: 40.564442 },
+  "plans-permits": { file: "plans.svg", width: 49.207718, height: 51.55938 },
+  "multi-family": { file: "residential.svg", width: 48.030975, height: 40.825836 },
+  "project-management": { file: "management.svg", width: 444.03079, height: 562.90814 }
 };
 
 const coverDimensionsByFile = {

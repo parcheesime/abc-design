@@ -252,6 +252,47 @@
   text-wrap: balance;
 }
 
+.hero__projects-link {
+  position: absolute;
+  top: calc(100% + var(--space-md));
+  left: 50%;
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  gap: var(--space-xs);
+  padding-inline: var(--space-sm);
+  color: #fff;
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-decoration-color: transparent;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.hero__projects-link:hover {
+  color: #fff;
+  text-decoration-color: currentColor;
+}
+
+.hero__projects-link:focus-visible {
+  color: #fff;
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.hero__projects-arrow {
+  transition: transform 160ms ease;
+}
+
+.hero__projects-link:hover .hero__projects-arrow,
+.hero__projects-link:focus-visible .hero__projects-arrow {
+  transform: translateX(0.2rem);
+}
+
 .hero h1 {
   color: #fff;
   font-weight: 700;
@@ -385,6 +426,11 @@
 }
 
 .cta-section__inner .button-primary {
+  justify-self: start;
+}
+
+.cta-section__inner .cta-section__link {
+  grid-column: auto;
   justify-self: start;
 }
 
@@ -1259,6 +1305,7 @@
 }
 
 .service-list__item:hover .service-list__arrow,
+.service-list__link:hover .service-list__arrow,
 .service-list__link:focus-visible .service-list__arrow {
   transform: translateX(0.25rem);
 }
@@ -1280,11 +1327,15 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .hero__projects-arrow,
   .service-list__arrow {
     transition: none;
   }
 
+  .hero__projects-link:hover .hero__projects-arrow,
+  .hero__projects-link:focus-visible .hero__projects-arrow,
   .service-list__item:hover .service-list__arrow,
+  .service-list__link:hover .service-list__arrow,
   .service-list__link:focus-visible .service-list__arrow {
     transform: none;
   }

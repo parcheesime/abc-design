@@ -28,7 +28,7 @@ const coverDimensionsByFile = {
   "east-elevation.png": { width: 1341, height: 602 },
   "hero.webp": { width: 1416, height: 1066 },
   "talmadge-covered-patio.webp": { width: 1216, height: 1294 },
-  "parke-ivy-02.png": { width: 3888, height: 2592 },
+  "parke-ivy-02.webp": { width: 5712, height: 4284 },
   "rolando-remodel-hero.webp": { width: 664, height: 396 }
 };
 

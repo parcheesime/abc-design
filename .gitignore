@@ -1,10 +1,45 @@
 node_modules/
 _site/
 .lighthouseci/
-reports/lighthouse/
+reports/
+.visual-check/
 .vscode/
 .DS_Store
 
+# Environment and local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*.json
+*service-account*.json
+
+# Local verification / generated reports
+*.lighthouse.report.html
+*.lighthouse.report.json
+
+# Temporary/editor/system files
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*.swo
+Thumbs.db
+*:Zone.Identifier
+
 # Original customer plan sets
 **/*.pdf
-src/projects/plans/**/*.pdf
+
+# Local-only client/project source material
+private/
+local/
+client-files/
+project-documents/
+
+# Local AI/tool state
+.agents/
+.codex/

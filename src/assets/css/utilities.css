@@ -303,33 +303,6 @@
   max-width: 18ch;
 }
 
-.about-hero {
-  border-bottom: 0;
-}
-
-.about-hero-media {
-  margin-block-end: var(--space-2xl);
-}
-
-.about-image-placeholder {
-  position: relative;
-  min-height: 18rem;
-  overflow: hidden;
-  border: var(--border-standard);
-  border-radius: var(--radius-md);
-  background:
-    linear-gradient(135deg, transparent 0 48%, color-mix(in srgb, var(--color-border), transparent 18%) 48% 48.25%, transparent 48.25% 100%),
-    linear-gradient(45deg, transparent 0 56%, color-mix(in srgb, var(--color-border), transparent 28%) 56% 56.25%, transparent 56.25% 100%),
-    var(--color-background);
-}
-
-.about-image-placeholder::before {
-  content: "";
-  position: absolute;
-  inset: var(--space-lg);
-  border: var(--border-width) solid color-mix(in srgb, var(--color-border), transparent 18%);
-}
-
 .eyebrow {
   color: var(--color-primary);
   font-family: var(--font-sans);

@@ -45,32 +45,11 @@
     "Garage connection to the residence",
     "Energy and structural coordination"
   ],
-  "coverImage": "midcity-covered-patio.webp",
+  "coverImage": "talmadge-covered-patio.webp",
   "gallery": [
     {
-      "image": "talmadge-kitchen.webp",
-      "alt": "Remodeled kitchen and family room within the expanded Talmadge residence."
-    },
-    {
-      "image": "midcity-covered-patio.webp",
+      "image": "talmadge-covered-patio.webp",
       "alt": "Covered rear patio with an exposed wood ceiling and ceiling fan."
-    }
-  ],
-  "planImages": [
-    {
-      "src": "talmadge-site-plan.webp",
-      "title": "Site Plan & Project Information",
-      "alt": "Site plan and project information for the Talmadge rear addition."
-    },
-    {
-      "src": "talmadge-existing-plans.webp",
-      "title": "Existing Floor Plan & Elevations",
-      "alt": "Existing floor plan and exterior elevations before the addition."
-    },
-    {
-      "src": "talmadge-proposed-plan.webp",
-      "title": "Proposed Floor Plan",
-      "alt": "Proposed floor plan showing the new primary suite, family room, and covered patio."
     }
   ]
 }
